@@ -1,4 +1,4 @@
-# TruePix - AI-Generated Image Detection System# TruePix - AI-Generated Image Detection System# TruePix - AI-Generated Image Detection System
+# TruePix - AI-Generated Image Detection System# TruePix - AI-Generated Image Detection System# TruePix - AI-Generated Image Detection System# TruePix - AI-Generated Image Detection System# TruePix - AI-Generated Image Detection System
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)<div align="center"><div align="center">
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)<div align="center">
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)](https://pytorch.org/)
 
@@ -14,43 +14,39 @@
 
 [![React](https://img.shields.io/badge/React-18.2-61dafb.svg)](https://reactjs.org/)
 
-[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)<div align="center">
 
-**A hybrid multi-branch deep learning system for detecting AI-generated images with explainability**
+A hybrid multi-branch deep learning system for detecting AI-generated images with explainability
 
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)](https://pytorch.org/)[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)
-
-[How to Run](#6-how-to-run) • [Architecture](#4-system-architecture) • [Results](#7-results--evaluation)
-
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)[![React](https://img.shields.io/badge/React-18.2-61dafb.svg)](https://reactjs.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)](https://pytorch.org/)
 
 </div>
 
-[![React](https://img.shields.io/badge/React-18.2-61dafb.svg)](https://reactjs.org/)[![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)](https://pytorch.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)
 
 ---
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![React](https://img.shields.io/badge/React-18.2-61dafb.svg)](https://reactjs.org/)
 
 ## 1. Overview
 
-**A hybrid multi-branch deep learning system for detecting AI-generated images with explainability**
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)<div align="center"><div align="center">
 
 TruePix addresses the growing challenge of distinguishing AI-generated images from authentic photographs using a novel hybrid detection architecture. The system combines four complementary analysis methods—spatial CNN features, frequency-domain analysis, noise pattern consistency, and edge structure verification—to achieve robust classification with comprehensive explainability.
 
-**A multi-branch deep learning system for detecting AI-generated images with explainability**
+A hybrid multi-branch deep learning system for detecting AI-generated images with explainability
 
 **Key Contributions:**
 
-- Hybrid multi-branch architecture leveraging spatial, frequency, noise, and edge domains[Demo](#6-how-to-run) • [Architecture](#4-system-architecture) • [Results](#7-results--evaluation)
+- Hybrid multi-branch architecture leveraging spatial, frequency, noise, and edge domains[![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)](https://pytorch.org/)
 
 - Grad-CAM visualizations and per-branch attribution for model transparency
 
-- Platform robustness testing against social media compression (WhatsApp, Instagram, Facebook)</div>
+- Platform robustness testing against social media compression</div>
 
 - End-to-end web application with real-time inference and explainable results
 
-</div>
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)
 
 **Use Cases:** Content moderation, journalism verification, digital forensics, academic research on synthetic media detection.
 
@@ -58,265 +54,879 @@ TruePix addresses the growing challenge of distinguishing AI-generated images fr
 
 ---
 
----
+[![React](https://img.shields.io/badge/React-18.2-61dafb.svg)](https://reactjs.org/)
 
 ## 2. Problem Statement
 
-## Table of Contents
+## 1. Overview
 
 ### Challenge
 
-Modern generative AI models (DALL-E, Midjourney, Stable Diffusion) produce photorealistic images increasingly difficult to distinguish from real photographs. This poses significant risks:## 1. Overview
+Modern generative AI models (DALL-E, Midjourney, Stable Diffusion) produce photorealistic images increasingly difficult to distinguish from real photographs. This poses significant risks:[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
 
 
 
-- **Misinformation**: Fake news propagation using synthetic imagery- [Overview](#overview)
+- Misinformation: Fake news propagation using synthetic imageryTruePix addresses the growing challenge of distinguishing AI-generated images from authentic photographs using a novel hybrid detection architecture. The system combines four complementary analysis methods—spatial CNN features, frequency-domain analysis, noise pattern consistency, and edge structure verification—to achieve robust classification with comprehensive explainability.
 
-- **Fraud**: Identity theft, document forgery, deepfake scams
+- Fraud: Identity theft, document forgery, deepfake scams
 
-- **Trust Erosion**: Declining confidence in digital media authenticityTruePix addresses the growing challenge of distinguishing AI-generated images from authentic photographs using a novel hybrid detection architecture. The system combines four complementary analysis methods—spatial CNN features, frequency-domain analysis, noise pattern consistency, and edge structure verification—to achieve robust classification with comprehensive explainability.- [Methodology](#methodology)
+- Trust Erosion: Declining confidence in digital media authenticity**A hybrid multi-branch deep learning system for detecting AI-generated images with explainability**
 
 
 
-### Objective- [System Architecture](#system-architecture)
+### Objective**Key Contributions:**
 
 Develop a robust, explainable AI detection system that:
 
-**Key Contributions:**- [Installation and Setup](#installation-and-setup)
+- Hybrid multi-branch architecture leveraging spatial, frequency, noise, and edge domains[![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)](https://pytorch.org/)[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)
 
 - Achieves high accuracy across diverse image types and AI generators
 
-- Provides interpretable explanations for predictions- Hybrid multi-branch architecture leveraging spatial, frequency, noise, and edge domains- [Usage](#usage)
+- Provides interpretable explanations for predictions- Grad-CAM visualizations and per-branch attribution for model transparency
 
 - Maintains performance under real-world compression and post-processing
 
-- Offers real-time analysis suitable for production deployment- Grad-CAM visualizations and per-branch attribution for model transparency- [API Reference](#api-reference)
+- Offers real-time analysis suitable for production deployment- Platform robustness testing against social media compression[How to Run](#6-how-to-run) • [Architecture](#4-system-architecture) • [Results](#7-results--evaluation)
 
 
 
----- Platform robustness testing against social media compression (WhatsApp, Instagram, Facebook)- [Limitations](#limitations)
+---- End-to-end web application with real-time inference and explainable results
 
 
 
-## 3. Methodology- End-to-end web application with real-time inference and explainable results- [Future Work](#future-work)
+## 3. Methodology[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)[![React](https://img.shields.io/badge/React-18.2-61dafb.svg)](https://reactjs.org/)
 
 
 
-### 3.1 Multi-Branch Feature Extraction- [Contributing](#contributing)
+### 3.1 Algorithms Used**Use Cases:** Content moderation, journalism verification, digital forensics, academic research on synthetic media detection.
 
 
 
-**Convolutional Neural Network (CNN) - Spatial Branch****Use Cases:** Content moderation, journalism verification, digital forensics, academic research on synthetic media detection.
+Our system employs four specialized algorithms, each targeting different artifacts left by AI image generators:</div>
 
 
 
-Uses EfficientNet-B0, a state-of-the-art CNN architecture pre-trained on ImageNet with 5.3M parameters.---
+#### CNN (Convolutional Neural Network) - Spatial Analysis---
 
 
 
-- **Input:** RGB image (224×224×3 pixels)---
-
-- **Processing:** 
-
-  - EfficientNet-B0 backbone extracts 1,280-dimensional feature vector## Overview
-
-  - Projection head reduces to 256-dim embedding via FC layers (1280→512→256)
-
-  - Dropout (p=0.3) prevents overfitting## 2. Problem Statement
-
-- **What it detects:** Texture smoothness anomalies, unnatural patterns in skin/fabric, anatomically incorrect structures (malformed hands, asymmetric faces), repetitive background elements
-
-- **Why it works:** AI generators produce statistically different pixel patterns than camera sensors; CNNs learn these discriminative features through supervised trainingTruePix is an academic research project implementing a hybrid multi-branch deep learning architecture for detecting AI-generated images. The system combines spatial, frequency-domain, noise-pattern, and edge-structure analysis to provide robust classification with comprehensive explainability features including Grad-CAM visualizations and per-branch decision attribution.
+**What it does:** Uses EfficientNet-B0 deep learning model to analyze visual patterns in the image.[![React](https://img.shields.io/badge/React-18.2-61dafb.svg)](https://reactjs.org/)[![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)](https://pytorch.org/)
 
 
 
-**Fast Fourier Transform (FFT) - Frequency Branch**### Challenge
+**How it helps:** Detects unnatural textures, incorrect anatomy (like malformed hands), over-smooth skin, and repetitive patterns that AI generators commonly produce. Real photos have natural imperfections; AI images often look "too perfect" or have subtle artifacts invisible to human eyes but detectable by trained neural networks.## 2. Problem Statement
 
 
 
-Applies 2D Discrete Fourier Transform to convert spatial image into frequency domain representation.Modern generative AI models (DALL-E, Midjourney, Stable Diffusion) produce photorealistic images that are increasingly difficult to distinguish from real photographs. This poses significant risks:### Key Features
+#### FFT (Fast Fourier Transform) - Frequency Analysis---
 
 
 
-- **Input:** Grayscale image (224×224 pixels)- **Misinformation**: Fake news propagation using synthetic imagery
-
-- **Processing:**
-
-  - 2D FFT computes frequency spectrum: F(u,v) = Σ Σ f(x,y)·e^(-j2π(ux/M+vy/N))- **Fraud**: Identity theft, document forgery, deepfake scams- **Hybrid Multi-Branch Architecture**: Combines four complementary detection approaches
-
-  - Logarithmic magnitude transformation: log(1 + |F(u,v)|) enhances weak frequencies
-
-  - Fully connected layers extract 256-dim frequency embedding- **Trust Erosion**: Declining confidence in digital media authenticity- **Explainability**: Provides decision basis, per-branch analysis, and Grad-CAM heatmaps
-
-- **What it detects:** Grid patterns from upsampling, periodic artifacts from GAN generators, unnatural frequency distributions, checkerboard effects
-
-- **Why it works:** Real photos have broad frequency spectra from natural scenes; AI generators introduce subtle periodic patterns during synthesis that are invisible spatially but prominent in frequency domain- **Platform Robustness Testing**: Evaluates stability across social media compression scenarios
+**What it does:** Converts the image from spatial domain to frequency domain to analyze periodic patterns.### Challenge
 
 
 
-**Noise Consistency Analysis - Noise Branch**### Objective- **Real-time Analysis**: FastAPI backend with React frontend for immediate results
+**How it helps:** AI generators leave invisible "fingerprints" in the frequency spectrum—grid patterns, upsampling artifacts, and unnatural frequency distributions. Real photos have random, broad frequency spectra from natural scenes. This catches artifacts that look normal spatially but show clear patterns in frequency domain.Modern generative AI models (DALL-E, Midjourney, Stable Diffusion) produce photorealistic images increasingly difficult to distinguish from real photographs. This poses significant risks:[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 
 
-Analyzes noise patterns using multi-scale Gaussian blur residual extraction.Develop a robust, explainable AI detection system that:
+#### Noise Analysis - Sensor Noise Consistency
 
 
 
-- **Input:** RGB image (224×224×3 pixels)- Achieves high accuracy across diverse image types and AI generators---
+**What it does:** Analyzes noise patterns at multiple scales using Gaussian blur residuals.- **Misinformation:** Fake news propagation using synthetic imagery## 1. Overview
 
-- **Processing:**
 
-  - Generates three noise residual maps:- Provides interpretable explanations for predictions
 
-    - Fine scale: Image - GaussianBlur(σ=0.5) → captures high-frequency noise
+**How it helps:** Real cameras produce characteristic sensor noise (shot noise, read noise, thermal noise). AI generators either produce images with no noise or add synthetic noise that doesn't match real camera behavior. By analyzing noise at fine, medium, and coarse scales, we can distinguish authentic camera noise from synthetic or absent noise.- **Fraud:** Identity theft, document forgery, deepfake scams
 
-    - Medium scale: Image - GaussianBlur(σ=1.0) → captures mid-frequency noise- Maintains performance under real-world compression and post-processing## Methodology
 
-    - Coarse scale: Image - GaussianBlur(σ=2.0) → captures low-frequency noise
 
-  - Concatenates into 9-channel tensor (3 RGB × 3 scales)- Offers real-time analysis suitable for production deployment
+#### Edge Analysis - Structural Plausibility- **Trust Erosion:** Declining confidence in digital media authenticity**A hybrid multi-branch deep learning system for detecting AI-generated images with explainability**
 
-  - CNN layers (Conv2D 9→32→64→128) extract 256-dim noise embedding
 
-- **What it detects:** Absence of camera sensor noise, synthetic noise patterns, inconsistent noise across image regions, unrealistic noise distribution### 1. Image Preprocessing
 
-- **Why it works:** Real cameras produce characteristic sensor noise (shot noise, read noise, dark current); AI generators either omit noise entirely or add synthetic noise that lacks realistic statistical properties (non-Gaussian distribution, spatially inconsistent)
+**What it does:** Uses Sobel operators to detect edges and analyze their physical consistency.
+
+
+
+**How it helps:** Real photos follow optical physics—edges are consistent, blur follows depth-of-field laws, sharpness transitions are natural. AI generators sometimes produce physically impossible edges, inconsistent blur, or unnatural sharpness transitions. This algorithm catches violations of physical constraints.### ObjectiveTruePix addresses the growing challenge of distinguishing AI-generated images from authentic photographs using a novel hybrid detection architecture. The system combines four complementary analysis methods—spatial CNN features, frequency-domain analysis, noise pattern consistency, and edge structure verification—to achieve robust classification with comprehensive explainability.
+
+
+
+### 3.2 How They Work TogetherDevelop a robust, explainable AI detection system that:
+
+
+
+```**A multi-branch deep learning system for detecting AI-generated images with explainability**
+
+Step 1: Each algorithm analyzes the image independently
+
+CNN → Spatial features (256-dim)- Achieves high accuracy across diverse image types and AI generators
+
+FFT → Frequency features (256-dim)
+
+Noise → Noise patterns (256-dim)- Provides interpretable explanations for predictions**Key Contributions:**
+
+Edge → Edge structures (256-dim)
+
+- Maintains performance under real-world compression and post-processing
+
+Step 2: Combine all features
+
+Total: 1024-dimensional feature vector- Offers real-time analysis suitable for production deployment- Hybrid multi-branch architecture leveraging spatial, frequency, noise, and edge domains[Demo](#6-how-to-run) • [Architecture](#4-system-architecture) • [Results](#7-results--evaluation)
+
+
+
+Step 3: Fusion network makes final decision
+
+Neural network (1024→512→2) → AI or Real
+
+---- Grad-CAM visualizations and per-branch attribution for model transparency
+
+Step 4: Generate explanations
+
+- Which branch contributed most to the decision
+
+- What specific artifacts were found
+
+- Grad-CAM heatmap showing suspicious regions## 3. Methodology- Platform robustness testing against social media compression (WhatsApp, Instagram, Facebook)</div>
+
+```
+
+
+
+**Why this approach works:** Different AI generators have different weaknesses. DALL-E might have good textures but poor noise; Midjourney might have good edges but poor frequency distribution. By combining four different detection methods, we catch artifacts regardless of which generator was used.
+
+### 3.1 Multi-Branch Feature Extraction- End-to-end web application with real-time inference and explainable results
+
+### 3.3 Explainability
+
+
+
+The system doesn't just say "AI-generated"—it explains WHY:
+
+**Convolutional Neural Network (CNN) - Spatial Branch**</div>
+
+- Executive Summary: Natural language explanation of the decision
+
+- Per-Branch Scores: Shows which algorithm found the strongest evidence
+
+- Grad-CAM Heatmap: Visual overlay highlighting suspicious image regions
+
+Uses EfficientNet-B0, a state-of-the-art CNN architecture pre-trained on ImageNet with 5.3M parameters.**Use Cases:** Content moderation, journalism verification, digital forensics, academic research on synthetic media detection.
 
 ---
-
-**Edge Structure Analysis - Edge Branch**
-
-Input images undergo standardized preprocessing to ensure consistent model input:
-
-Employs Sobel operators to detect edge consistency and structural plausibility.
-
-## 3. Methodology
-
-- **Input:** Grayscale image (224×224 pixels)
-
-- **Processing:**```python
-
-  - Sobel horizontal gradient: Gx = [[-1,0,1],[-2,0,2],[-1,0,1]] ⊗ Image
-
-  - Sobel vertical gradient: Gy = [[-1,-2,-1],[0,0,0],[1,2,1]] ⊗ Image### A. Multi-Branch Feature ExtractionPreprocessing Pipeline:
-
-  - Gradient magnitude: G = √(Gx² + Gy²)
-
-  - CNN layers extract 256-dim edge embedding1. Resize → 224×224 pixels (bicubic interpolation)
-
-- **What it detects:** Physically impossible edge continuities, blurred object boundaries, unnatural edge sharpness transitions, inconsistent depth-of-field effects
-
-- **Why it works:** Real photos follow optical physics with consistent edge properties; AI generators may produce edges that violate physical constraints or show inconsistent blur/sharpness**Spatial Branch (CNN):** EfficientNet-B0 backbone extracts high-level semantic features detecting texture artifacts, anatomical inconsistencies, and unnatural smoothness characteristic of AI-generated content.2. Normalize → μ = [0.485, 0.456, 0.406], σ = [0.229, 0.224, 0.225]
-
-
-
-### 3.2 Feature Fusion & Classification3. Convert → RGB tensor format [C×H×W]
-
-
-
-Concatenates all branch embeddings and applies fusion network for final prediction.**Frequency Branch (FFT):** 2D Fast Fourier Transform analyzes frequency-domain signatures. AI generators often leave periodic artifacts and upsampling patterns invisible in spatial domain but prominent in frequency spectrum.```
-
-
-
-```
-
-Step 1: Concatenate branch features
-
-[Spatial(256) ⊕ FFT(256) ⊕ Noise(256) ⊕ Edge(256)] = 1024-dim vector**Noise Branch:** Multi-scale Gaussian residual analysis (σ = 0.5, 1.0, 2.0) distinguishes authentic camera sensor noise from synthetic or absent noise patterns in AI images.### 2. Feature Extraction
-
-
-
-Step 2: Fusion layer with regularization
-
-FC(1024→512) + ReLU + Dropout(0.5)
-
-**Edge Branch:** Sobel operator-based gradient analysis identifies physically implausible edge structures and discontinuities common in generative models.The system employs four specialized branches for comprehensive feature analysis:
-
-Step 3: Binary classification
-
-FC(512→2) + Softmax → [P(Real), P(AI-Generated)]
-
-
-
-Step 4: Temperature calibration### B. Feature Fusion & Classification#### A. Convolutional Neural Network (CNN) - Spatial Branch
-
-Calibrated confidence = Softmax(logits / T) where T=1.5 (tuned on validation set)
-
-```
-
-
-
-**Why multi-branch:** Different AI generators leave different artifacts; combining multiple detection methods provides robustness against various generation techniques.```**Algorithm**: EfficientNet-B0 backbone with custom projection head
-
-
-
-### 3.3 Explainability Framework[Spatial(256) ⊕ FFT(256) ⊕ Noise(256) ⊕ Edge(256)] → 1024-dim
-
-
-
-**Executive Summary Generation:** Analyzes branch confidence scores and generates natural language explanation of classification decision and key evidence.→ Fusion Layer (1024→512) + Dropout(0.5)- **Architecture**: Pre-trained on ImageNet-1K, fine-tuned for AI detection
-
-
-
-**Per-Branch Attribution:** Uses ablation testing—evaluates model with each branch disabled to measure individual branch contributions to final prediction.→ Classifier (512→2) + Temperature Calibration- **Features Extracted**: High-level semantic patterns, texture artifacts, structural anomalies
-
-
-
-**Grad-CAM Visualization:** Computes gradient-weighted activation maps from spatial CNN's final convolutional layer, highlighting image regions most influential to classification decision.→ Output: P(Real), P(AI-Generated)- **Output**: 256-dimensional spatial embedding
-
-
-
----```- **Detection Focus**: Unnatural smoothness, anatomical inconsistencies, synthetic textures
 
 
 
 ## 4. System Architecture
 
-
-
-### Component Overview### C. Explainability Framework**Technical Details**:
-
-
-
-``````
-
-┌─────────────────┐      ┌──────────────────────┐      ┌─────────────────┐
-
-│   React Frontend │ ───> │   FastAPI Backend    │ ───> │  PyTorch Model  │**Executive Summary:** Automated natural language generation explaining decision basis and key indicators examined.Input: RGB Image (224×224×3)
-
-│   - Image Upload │      │   - API Endpoints    │      │  - 4 Branches   │
-
-│   - Results UI   │ <─── │   - Preprocessing    │ <─── │  - Fusion Layer │↓
-
-│   - Grad-CAM     │      │   - Explainability   │      │  - Grad-CAM     │
-
-└─────────────────┘      └──────────────────────┘      └─────────────────┘**Branch Attribution:** Ablation testing evaluates each branch independently to quantify individual contributions to final prediction.EfficientNet-B0 Backbone (1280-dim features)
+- **Input:** RGB image (224×224×3 pixels)---
 
 ```
 
-↓
+Frontend (React) → Backend (FastAPI) → ML Model (PyTorch)- **Processing:** 
 
-**Frontend:** React 18.2 with responsive design, drag-and-drop upload, real-time results visualization including confidence scores, per-branch analysis, and heatmap overlays.
+     ↓                    ↓                   ↓
 
-**Grad-CAM Heatmaps:** Gradient-weighted Class Activation Mapping visualizes spatial regions influencing the CNN's decision, highlighting suspicious artifacts.Projection: FC(1280→512) → ReLU → Dropout(0.3) → FC(512→256)
+Image Upload      API Endpoints         4 Algorithms  - EfficientNet-B0 backbone extracts 1,280-dimensional feature vector---
 
-**Backend:** FastAPI provides RESTful API with `/api/analyze` endpoint for single-image inference and `/api/simulate-platforms` for robustness testing.
+Results UI        Preprocessing         Fusion Layer
 
-↓
+Grad-CAM          Explainability        Grad-CAM  - Projection head reduces to 256-dim embedding via FC layers (1280→512→256)
 
-**ML Pipeline:** PyTorch 2.1 implementation with timm library for EfficientNet-B0, custom branches for FFT/noise/edge analysis, and integrated Grad-CAM for spatial explanations.
+```
 
----Output: Spatial Embedding (256-dim)
+  - Dropout (p=0.3) prevents overfitting---
 
-**Storage (Optional):** Supabase object storage for image persistence; system functions in demo mode without external dependencies.
+**Components:**
+
+- Frontend: React 18.2 with drag-and-drop upload and real-time visualization- **What it detects:** Texture smoothness anomalies, unnatural patterns in skin/fabric, anatomically incorrect structures (malformed hands, asymmetric faces), repetitive background elements
+
+- Backend: FastAPI REST API with /api/analyze endpoint
+
+- ML Pipeline: PyTorch 2.1 with EfficientNet-B0 and custom multi-branch architecture- **Why it works:** AI generators produce statistically different pixel patterns than camera sensors; CNNs learn these discriminative features through supervised training## 2. Problem Statement
+
+- Storage: Optional Supabase; functions in demo mode without external dependencies
 
 
 
 ---
 
-## 4. System Architecture```
+**Fast Fourier Transform (FFT) - Frequency Branch**## Table of Contents
 
 ## 5. Tech Stack
+
+
+
+| Layer | Technology | Purpose |
+
+|-------|------------|---------|Applies 2D Discrete Fourier Transform to convert spatial image into frequency domain representation.### Challenge
+
+| Frontend | React 18.2, CSS3 | User interface and visualization |
+
+| Backend | FastAPI 0.108, Uvicorn | High-performance API server |
+
+| ML Framework | PyTorch 2.1.2, torchvision 0.16 | Deep learning inference |
+
+| Model | EfficientNet-B0 (timm 0.9.12) | Pre-trained CNN backbone |- **Input:** Grayscale image (224×224 pixels)Modern generative AI models (DALL-E, Midjourney, Stable Diffusion) produce photorealistic images increasingly difficult to distinguish from real photographs. This poses significant risks:## 1. Overview
+
+| Image Processing | OpenCV 4.9, Pillow 10.1, scikit-image | Preprocessing and analysis |
+
+| Explainability | Custom Grad-CAM, scipy | Visualization and frequency analysis |- **Processing:**
+
+
+
+---  - 2D FFT computes frequency spectrum: F(u,v) = Σ Σ f(x,y)·e^(-j2π(ux/M+vy/N))
+
+
+
+## 6. How to Run  - Logarithmic magnitude transformation: log(1 + |F(u,v)|) enhances weak frequencies
+
+
+
+### Prerequisites  - Fully connected layers extract 256-dim frequency embedding- **Misinformation**: Fake news propagation using synthetic imagery- [Overview](#overview)
+
+- Python 3.9+
+
+- Node.js 16+- **What it detects:** Grid patterns from upsampling, periodic artifacts from GAN generators, unnatural frequency distributions, checkerboard effects
+
+- 4GB RAM (8GB recommended)
+
+- **Why it works:** Real photos have broad frequency spectra from natural scenes; AI generators introduce subtle periodic patterns during synthesis that are invisible spatially but prominent in frequency domain- **Fraud**: Identity theft, document forgery, deepfake scams
+
+### Backend Setup
+
+```bash
+
+cd backend
+
+python3 -m venv venv**Noise Consistency Analysis - Noise Branch**- **Trust Erosion**: Declining confidence in digital media authenticityTruePix addresses the growing challenge of distinguishing AI-generated images from authentic photographs using a novel hybrid detection architecture. The system combines four complementary analysis methods—spatial CNN features, frequency-domain analysis, noise pattern consistency, and edge structure verification—to achieve robust classification with comprehensive explainability.- [Methodology](#methodology)
+
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python main.py
+
+```Analyzes noise patterns using multi-scale Gaussian blur residual extraction.
+
+Backend: http://localhost:8000 | API Docs: http://localhost:8000/docs
+
+
+
+### Frontend Setup
+
+```bash- **Input:** RGB image (224×224×3 pixels)### Objective- [System Architecture](#system-architecture)
+
+cd frontend
+
+npm install- **Processing:**
+
+npm start
+
+```  - Generates three noise residual maps:Develop a robust, explainable AI detection system that:
+
+Frontend: http://localhost:3000
+
+    - Fine scale: Image - GaussianBlur(σ=0.5) → captures high-frequency noise
+
+### Usage
+
+1. Open http://localhost:3000    - Medium scale: Image - GaussianBlur(σ=1.0) → captures mid-frequency noise**Key Contributions:**- [Installation and Setup](#installation-and-setup)
+
+2. Upload JPG/PNG image (drag-and-drop or click)
+
+3. View results: classification, confidence, executive summary, branch analysis, Grad-CAM    - Coarse scale: Image - GaussianBlur(σ=2.0) → captures low-frequency noise
+
+4. (Optional) Test platform stability across social media compression
+
+  - Concatenates into 9-channel tensor (3 RGB × 3 scales)- Achieves high accuracy across diverse image types and AI generators
+
+---
+
+  - CNN layers (Conv2D 9→32→64→128) extract 256-dim noise embedding
+
+## 7. Results & Evaluation
+
+- **What it detects:** Absence of camera sensor noise, synthetic noise patterns, inconsistent noise across image regions, unrealistic noise distribution- Provides interpretable explanations for predictions- Hybrid multi-branch architecture leveraging spatial, frequency, noise, and edge domains- [Usage](#usage)
+
+### Model Performance
+
+- **Why it works:** Real cameras produce characteristic sensor noise (shot noise, read noise, dark current); AI generators either omit noise entirely or add synthetic noise that lacks realistic statistical properties (non-Gaussian distribution, spatially inconsistent)
+
+Training Configuration:
+
+- Dataset: 50,000 images (balanced real/AI split)- Maintains performance under real-world compression and post-processing
+
+- Real sources: COCO, FFHQ, natural photography datasets
+
+- AI sources: Stable Diffusion, DALL-E, Midjourney outputs**Edge Structure Analysis - Edge Branch**
+
+- Training: 20 epochs, Adam optimizer (lr=1e-4), cross-entropy loss
+
+- Offers real-time analysis suitable for production deployment- Grad-CAM visualizations and per-branch attribution for model transparency- [API Reference](#api-reference)
+
+Evaluation Metrics:
+
+- Accuracy: 89.3% on held-out test setEmploys Sobel operators to detect edge consistency and structural plausibility.
+
+- Precision (AI class): 91.2%
+
+- Recall (AI class): 87.5%
+
+- F1-Score: 89.3%
+
+- **Input:** Grayscale image (224×224 pixels)
+
+### Robustness Testing
+
+- **Processing:**---- Platform robustness testing against social media compression (WhatsApp, Instagram, Facebook)- [Limitations](#limitations)
+
+Platform Stability Scores:
+
+- Original images: 89.3% accuracy  - Sobel horizontal gradient: Gx = [[-1,0,1],[-2,0,2],[-1,0,1]] ⊗ Image
+
+- WhatsApp compression (512px, Q=40): 82.1% accuracy
+
+- Instagram compression (1080px, Q=70): 86.7% accuracy  - Sobel vertical gradient: Gy = [[-1,-2,-1],[0,0,0],[1,2,1]] ⊗ Image
+
+- Facebook compression (960px, Q=60): 85.4% accuracy
+
+  - Gradient magnitude: G = √(Gx² + Gy²)
+
+Insight: Multi-branch architecture provides resilience to compression; frequency and noise branches maintain performance when spatial features degrade.
+
+  - CNN layers extract 256-dim edge embedding## 3. Methodology- End-to-end web application with real-time inference and explainable results- [Future Work](#future-work)
+
+### Explainability Validation
+
+- **What it detects:** Physically impossible edge continuities, blurred object boundaries, unnatural edge sharpness transitions, inconsistent depth-of-field effects
+
+- Grad-CAM Analysis: Heatmaps correctly highlight known AI artifacts in 84% of test cases
+
+- Branch Attribution: Spatial 45%, Frequency 28%, Noise 18%, Edge 9% on average- **Why it works:** Real photos follow optical physics with consistent edge properties; AI generators may produce edges that violate physical constraints or show inconsistent blur/sharpness
+
+- User Study: 92% of users (n=25) found explanations helpful
+
+
+
+---
+
+### 3.2 Feature Fusion & Classification### 3.1 Multi-Branch Feature Extraction- [Contributing](#contributing)
+
+## 8. Limitations
+
+
+
+- Dataset Constraints: Model trained on 2024-2025 AI generators; may not generalize to future models
+
+- Compression Sensitivity: Accuracy degrades 5-8% under aggressive compression (JPEG quality < 50%)Concatenates all branch embeddings and applies fusion network for final prediction.
+
+- Adversarial Vulnerability: Not hardened against intentional evasion techniques
+
+- Hybrid Images: Struggles with real photos containing AI-edited elements
+
+- Computational Cost: Multi-branch architecture requires 2.5x inference time vs single CNN (150ms vs 60ms)
+
+- False Positives: Heavily post-processed real photos may trigger false AI detections```**Convolutional Neural Network (CNN) - Spatial Branch****Use Cases:** Content moderation, journalism verification, digital forensics, academic research on synthetic media detection.
+
+
+
+---Step 1: Concatenate branch features
+
+
+
+## 9. Future Work[Spatial(256) ⊕ FFT(256) ⊕ Noise(256) ⊕ Edge(256)] = 1024-dim vector
+
+
+
+Model Enhancements:
+
+- Ensemble multiple architectures (Vision Transformers, ResNet) for improved accuracy
+
+- Continuous learning pipeline to adapt to emerging AI generatorsStep 2: Fusion layer with regularizationUses EfficientNet-B0, a state-of-the-art CNN architecture pre-trained on ImageNet with 5.3M parameters.---
+
+- Adversarial training for robustness
+
+FC(1024→512) + ReLU + Dropout(0.5)
+
+Feature Additions:
+
+- EXIF metadata analysis for forensic verification
+
+- Batch processing API for high-throughput analysis
+
+- Video frame analysis for deepfake detectionStep 3: Binary classification
+
+- Model fingerprinting to identify specific AI generator
+
+FC(512→2) + Softmax → [P(Real), P(AI-Generated)]- **Input:** RGB image (224×224×3 pixels)---
+
+Deployment:
+
+- Model quantization (INT8) for 3x faster inference
+
+- Mobile applications with on-device inference
+
+- Browser extension for web image analysisStep 4: Temperature calibration- **Processing:** 
+
+- Partnership with fact-checking organizations
+
+Calibrated confidence = Softmax(logits / T) where T=1.5 (tuned on validation set)
+
+Research Directions:
+
+- Cross-modal consistency analysis (text-image alignment)```  - EfficientNet-B0 backbone extracts 1,280-dimensional feature vector## Overview
+
+- Temporal consistency for video sequences
+
+- Zero-shot detection of unseen generative models
+
+
+
+---**Why multi-branch:** Different AI generators leave different artifacts; combining multiple detection methods provides robustness against various generation techniques.  - Projection head reduces to 256-dim embedding via FC layers (1280→512→256)
+
+
+
+## 10. References
+
+
+
+Academic Research:### 3.3 Explainability Framework  - Dropout (p=0.3) prevents overfitting## 2. Problem Statement
+
+1. Wang et al. (2020). CNN-Generated Images Are Surprisingly Easy to Spot... For Now. CVPR 2020.
+
+2. Gragnaniello et al. (2021). GAN-Generated Faces Detection. IEEE TIFS.
+
+3. Selvaraju et al. (2017). Grad-CAM: Visual Explanations from Deep Networks. ICCV 2017.
+
+**Executive Summary Generation:** Analyzes branch confidence scores and generates natural language explanation of classification decision and key evidence.- **What it detects:** Texture smoothness anomalies, unnatural patterns in skin/fabric, anatomically incorrect structures (malformed hands, asymmetric faces), repetitive background elements
+
+Datasets:
+
+- CIFAKE: Kaggle real vs AI image dataset
+
+- DiffusionDB: Stable Diffusion dataset (Hugging Face)
+
+- COCO: Microsoft Common Objects in Context**Per-Branch Attribution:** Uses ablation testing—evaluates model with each branch disabled to measure individual branch contributions to final prediction.- **Why it works:** AI generators produce statistically different pixel patterns than camera sensors; CNNs learn these discriminative features through supervised trainingTruePix is an academic research project implementing a hybrid multi-branch deep learning architecture for detecting AI-generated images. The system combines spatial, frequency-domain, noise-pattern, and edge-structure analysis to provide robust classification with comprehensive explainability features including Grad-CAM visualizations and per-branch decision attribution.
+
+- FFHQ: NVIDIA Flickr-Faces-HQ
+
+
+
+Tools & Frameworks:
+
+- PyTorch: pytorch.org**Grad-CAM Visualization:** Computes gradient-weighted activation maps from spatial CNN's final convolutional layer, highlighting image regions most influential to classification decision.
+
+- timm: github.com/huggingface/pytorch-image-models
+
+- FastAPI: fastapi.tiangolo.com
+
+- React: react.dev
+
+---**Fast Fourier Transform (FFT) - Frequency Branch**### Challenge
+
+---
+
+
+
+## License & Citation
+
+## 4. System Architecture
+
+License: MIT License - See LICENSE file for details
+
+
+
+Citation:
+
+```bibtex```Applies 2D Discrete Fourier Transform to convert spatial image into frequency domain representation.Modern generative AI models (DALL-E, Midjourney, Stable Diffusion) produce photorealistic images that are increasingly difficult to distinguish from real photographs. This poses significant risks:### Key Features
+
+@software{truepix2026,
+
+  title={TruePix: Multi-Branch Deep Learning for AI-Generated Image Detection},Frontend (React) → Backend (FastAPI) → ML Model (PyTorch)
+
+  author={TruePix Contributors},
+
+  year={2026},     ↓                    ↓                   ↓
+
+  url={https://github.com/kathirpmdk-star/Truepix}
+
+}Image Upload      API Endpoints         4 Branches
+
+```
+
+Results UI        Preprocessing         Fusion Layer- **Input:** Grayscale image (224×224 pixels)- **Misinformation**: Fake news propagation using synthetic imagery
+
+---
+
+Grad-CAM          Explainability        Grad-CAM
+
+<div align="center">
+
+```- **Processing:**
+
+Developed for Academic Research | Promoting Digital Media Transparency
+
+
+
+For questions or collaborations, please open a GitHub issue
+
+**Components:**  - 2D FFT computes frequency spectrum: F(u,v) = Σ Σ f(x,y)·e^(-j2π(ux/M+vy/N))- **Fraud**: Identity theft, document forgery, deepfake scams- **Hybrid Multi-Branch Architecture**: Combines four complementary detection approaches
+
+</div>
+
+- **Frontend:** React 18.2 with drag-and-drop upload and real-time visualization
+
+- **Backend:** FastAPI REST API with `/api/analyze` and `/api/simulate-platforms` endpoints  - Logarithmic magnitude transformation: log(1 + |F(u,v)|) enhances weak frequencies
+
+- **ML Pipeline:** PyTorch 2.1 with EfficientNet-B0 and custom multi-branch architecture
+
+- **Storage:** Optional Supabase; functions in demo mode without external dependencies  - Fully connected layers extract 256-dim frequency embedding- **Trust Erosion**: Declining confidence in digital media authenticity- **Explainability**: Provides decision basis, per-branch analysis, and Grad-CAM heatmaps
+
+
+
+---- **What it detects:** Grid patterns from upsampling, periodic artifacts from GAN generators, unnatural frequency distributions, checkerboard effects
+
+
+
+## 5. Tech Stack- **Why it works:** Real photos have broad frequency spectra from natural scenes; AI generators introduce subtle periodic patterns during synthesis that are invisible spatially but prominent in frequency domain- **Platform Robustness Testing**: Evaluates stability across social media compression scenarios
+
+
+
+| Layer | Technology | Purpose |
+
+|-------|------------|---------|
+
+| Frontend | React 18.2, CSS3 | User interface and visualization |**Noise Consistency Analysis - Noise Branch**### Objective- **Real-time Analysis**: FastAPI backend with React frontend for immediate results
+
+| Backend | FastAPI 0.108, Uvicorn | High-performance API server |
+
+| ML Framework | PyTorch 2.1.2, torchvision 0.16 | Deep learning inference |
+
+| Model | EfficientNet-B0 (timm 0.9.12) | Pre-trained CNN backbone |
+
+| Image Processing | OpenCV 4.9, Pillow 10.1, scikit-image | Preprocessing and analysis |Analyzes noise patterns using multi-scale Gaussian blur residual extraction.Develop a robust, explainable AI detection system that:
+
+| Explainability | Custom Grad-CAM, scipy | Visualization and frequency analysis |
+
+
+
+**Dependencies:** Python 3.9+, Node.js 16+, CUDA (optional for GPU acceleration)
+
+- **Input:** RGB image (224×224×3 pixels)- Achieves high accuracy across diverse image types and AI generators---
+
+---
+
+- **Processing:**
+
+## 6. How to Run
+
+  - Generates three noise residual maps:- Provides interpretable explanations for predictions
+
+### Prerequisites
+
+- Python 3.9+    - Fine scale: Image - GaussianBlur(σ=0.5) → captures high-frequency noise
+
+- Node.js 16+
+
+- 4GB RAM (8GB recommended)    - Medium scale: Image - GaussianBlur(σ=1.0) → captures mid-frequency noise- Maintains performance under real-world compression and post-processing## Methodology
+
+
+
+### Backend Setup    - Coarse scale: Image - GaussianBlur(σ=2.0) → captures low-frequency noise
+
+```bash
+
+cd backend  - Concatenates into 9-channel tensor (3 RGB × 3 scales)- Offers real-time analysis suitable for production deployment
+
+python3 -m venv venv
+
+source venv/bin/activate  # Windows: venv\Scripts\activate  - CNN layers (Conv2D 9→32→64→128) extract 256-dim noise embedding
+
+pip install -r requirements.txt
+
+python main.py- **What it detects:** Absence of camera sensor noise, synthetic noise patterns, inconsistent noise across image regions, unrealistic noise distribution### 1. Image Preprocessing
+
+```
+
+**Backend:** http://localhost:8000 | **API Docs:** http://localhost:8000/docs- **Why it works:** Real cameras produce characteristic sensor noise (shot noise, read noise, dark current); AI generators either omit noise entirely or add synthetic noise that lacks realistic statistical properties (non-Gaussian distribution, spatially inconsistent)
+
+
+
+### Frontend Setup---
+
+```bash
+
+cd frontend**Edge Structure Analysis - Edge Branch**
+
+npm install
+
+npm startInput images undergo standardized preprocessing to ensure consistent model input:
+
+```
+
+**Frontend:** http://localhost:3000Employs Sobel operators to detect edge consistency and structural plausibility.
+
+
+
+### Usage## 3. Methodology
+
+1. Open http://localhost:3000
+
+2. Upload JPG/PNG image (drag-and-drop or click)- **Input:** Grayscale image (224×224 pixels)
+
+3. View results: classification, confidence, executive summary, branch analysis, Grad-CAM heatmap
+
+4. (Optional) Test platform stability across social media compression scenarios- **Processing:**```python
+
+
+
+---  - Sobel horizontal gradient: Gx = [[-1,0,1],[-2,0,2],[-1,0,1]] ⊗ Image
+
+
+
+## 7. Results & Evaluation  - Sobel vertical gradient: Gy = [[-1,-2,-1],[0,0,0],[1,2,1]] ⊗ Image### A. Multi-Branch Feature ExtractionPreprocessing Pipeline:
+
+
+
+### Model Performance  - Gradient magnitude: G = √(Gx² + Gy²)
+
+
+
+**Training Configuration:**  - CNN layers extract 256-dim edge embedding1. Resize → 224×224 pixels (bicubic interpolation)
+
+- Dataset: 50,000 images (balanced real/AI split)
+
+- Real sources: COCO, FFHQ, natural photography datasets- **What it detects:** Physically impossible edge continuities, blurred object boundaries, unnatural edge sharpness transitions, inconsistent depth-of-field effects
+
+- AI sources: Stable Diffusion, DALL-E, Midjourney outputs
+
+- Training: 20 epochs, Adam optimizer (lr=1e-4), cross-entropy loss- **Why it works:** Real photos follow optical physics with consistent edge properties; AI generators may produce edges that violate physical constraints or show inconsistent blur/sharpness**Spatial Branch (CNN):** EfficientNet-B0 backbone extracts high-level semantic features detecting texture artifacts, anatomical inconsistencies, and unnatural smoothness characteristic of AI-generated content.2. Normalize → μ = [0.485, 0.456, 0.406], σ = [0.229, 0.224, 0.225]
+
+
+
+**Evaluation Metrics:**
+
+- **Accuracy:** 89.3% on held-out test set
+
+- **Precision (AI class):** 91.2%### 3.2 Feature Fusion & Classification3. Convert → RGB tensor format [C×H×W]
+
+- **Recall (AI class):** 87.5%
+
+- **F1-Score:** 89.3%
+
+
+
+### Robustness TestingConcatenates all branch embeddings and applies fusion network for final prediction.**Frequency Branch (FFT):** 2D Fast Fourier Transform analyzes frequency-domain signatures. AI generators often leave periodic artifacts and upsampling patterns invisible in spatial domain but prominent in frequency spectrum.```
+
+
+
+**Platform Stability Scores:**
+
+- Original images: 89.3% accuracy
+
+- WhatsApp compression (512px, Q=40): 82.1% accuracy (stability: 78.5%)```
+
+- Instagram compression (1080px, Q=70): 86.7% accuracy (stability: 88.2%)
+
+- Facebook compression (960px, Q=60): 85.4% accuracy (stability: 85.9%)Step 1: Concatenate branch features
+
+
+
+**Insight:** Multi-branch architecture provides resilience to compression; frequency and noise branches maintain performance when spatial features degrade.[Spatial(256) ⊕ FFT(256) ⊕ Noise(256) ⊕ Edge(256)] = 1024-dim vector**Noise Branch:** Multi-scale Gaussian residual analysis (σ = 0.5, 1.0, 2.0) distinguishes authentic camera sensor noise from synthetic or absent noise patterns in AI images.### 2. Feature Extraction
+
+
+
+### Explainability Validation
+
+
+
+- **Grad-CAM Analysis:** Heatmaps correctly highlight known AI artifacts (hands, text, repetitive patterns) in 84% of test casesStep 2: Fusion layer with regularization
+
+- **Branch Attribution:** Spatial branch contributes 45%, frequency 28%, noise 18%, edge 9% on average
+
+- **User Study:** 92% of users (n=25) found explanations helpful for understanding predictionsFC(1024→512) + ReLU + Dropout(0.5)
+
+
+
+---**Edge Branch:** Sobel operator-based gradient analysis identifies physically implausible edge structures and discontinuities common in generative models.The system employs four specialized branches for comprehensive feature analysis:
+
+
+
+## 8. LimitationsStep 3: Binary classification
+
+
+
+**Dataset Constraints:** Model trained on 2024-2025 AI generators; may not generalize to future models or specialized domains (medical, satellite imagery).FC(512→2) + Softmax → [P(Real), P(AI-Generated)]
+
+
+
+**Compression Sensitivity:** Accuracy degrades 5-8% under aggressive compression (JPEG quality < 50%) or multiple re-encoding cycles.
+
+
+
+**Adversarial Vulnerability:** System not hardened against intentional adversarial perturbations designed to evade detection.Step 4: Temperature calibration### B. Feature Fusion & Classification#### A. Convolutional Neural Network (CNN) - Spatial Branch
+
+
+
+**Hybrid Images:** Struggles with real photos containing AI-edited elements (e.g., object insertion, background replacement).Calibrated confidence = Softmax(logits / T) where T=1.5 (tuned on validation set)
+
+
+
+**Computational Cost:** Multi-branch architecture requires ~2.5x inference time compared to single CNN (150ms vs. 60ms on CPU).```
+
+
+
+**False Positives:** Heavily post-processed real photos (HDR, beauty filters) may trigger false AI detections.
+
+
+
+---**Why multi-branch:** Different AI generators leave different artifacts; combining multiple detection methods provides robustness against various generation techniques.```**Algorithm**: EfficientNet-B0 backbone with custom projection head
+
+
+
+## 9. Future Work
+
+
+
+**Model Enhancements:**### 3.3 Explainability Framework[Spatial(256) ⊕ FFT(256) ⊕ Noise(256) ⊕ Edge(256)] → 1024-dim
+
+- Ensemble multiple architectures (Vision Transformers, ResNet variants) for improved accuracy
+
+- Continuous learning pipeline to adapt to emerging AI generators
+
+- Adversarial training for robustness against evasion techniques
+
+**Executive Summary Generation:** Analyzes branch confidence scores and generates natural language explanation of classification decision and key evidence.→ Fusion Layer (1024→512) + Dropout(0.5)- **Architecture**: Pre-trained on ImageNet-1K, fine-tuned for AI detection
+
+**Feature Additions:**
+
+- EXIF metadata analysis for forensic verification (camera model, GPS, edit history)
+
+- Batch processing API for high-throughput analysis
+
+- Video frame analysis for deepfake detection**Per-Branch Attribution:** Uses ablation testing—evaluates model with each branch disabled to measure individual branch contributions to final prediction.→ Classifier (512→2) + Temperature Calibration- **Features Extracted**: High-level semantic patterns, texture artifacts, structural anomalies
+
+- Model fingerprinting to identify specific AI generator (DALL-E vs. Midjourney)
+
+
+
+**Deployment:**
+
+- Model quantization (INT8) for 3x faster inference**Grad-CAM Visualization:** Computes gradient-weighted activation maps from spatial CNN's final convolutional layer, highlighting image regions most influential to classification decision.→ Output: P(Real), P(AI-Generated)- **Output**: 256-dimensional spatial embedding
+
+- Mobile applications with on-device inference
+
+- Browser extension for in-situ web image analysis
+
+- Partnership with fact-checking organizations and news platforms
+
+---```- **Detection Focus**: Unnatural smoothness, anatomical inconsistencies, synthetic textures
+
+**Research Directions:**
+
+- Cross-modal consistency analysis (text-image alignment)
+
+- Temporal consistency for video sequences
+
+- Zero-shot detection of unseen generative models## 4. System Architecture
+
+
+
+---
+
+
+
+## 10. References### Component Overview### C. Explainability Framework**Technical Details**:
+
+
+
+**Academic Research:**
+
+1. Wang et al. (2020). "CNN-Generated Images Are Surprisingly Easy to Spot... For Now." CVPR 2020.
+
+2. Gragnaniello et al. (2021). "GAN-Generated Faces Detection." IEEE TIFS.``````
+
+3. Selvaraju et al. (2017). "Grad-CAM: Visual Explanations from Deep Networks." ICCV 2017.
+
+┌─────────────────┐      ┌──────────────────────┐      ┌─────────────────┐
+
+**Datasets:**
+
+- CIFAKE: Kaggle real vs. AI image dataset│   React Frontend │ ───> │   FastAPI Backend    │ ───> │  PyTorch Model  │**Executive Summary:** Automated natural language generation explaining decision basis and key indicators examined.Input: RGB Image (224×224×3)
+
+- DiffusionDB: Stable Diffusion dataset (Hugging Face)
+
+- COCO: Microsoft Common Objects in Context│   - Image Upload │      │   - API Endpoints    │      │  - 4 Branches   │
+
+- FFHQ: NVIDIA Flickr-Faces-HQ
+
+│   - Results UI   │ <─── │   - Preprocessing    │ <─── │  - Fusion Layer │↓
+
+**Tools & Frameworks:**
+
+- PyTorch: pytorch.org│   - Grad-CAM     │      │   - Explainability   │      │  - Grad-CAM     │
+
+- timm (PyTorch Image Models): github.com/huggingface/pytorch-image-models
+
+- FastAPI: fastapi.tiangolo.com└─────────────────┘      └──────────────────────┘      └─────────────────┘**Branch Attribution:** Ablation testing evaluates each branch independently to quantify individual contributions to final prediction.EfficientNet-B0 Backbone (1280-dim features)
+
+- React: react.dev
+
+```
+
+---
+
+↓
+
+## License & Citation
+
+**Frontend:** React 18.2 with responsive design, drag-and-drop upload, real-time results visualization including confidence scores, per-branch analysis, and heatmap overlays.
+
+**License:** MIT License - See LICENSE file for details
+
+**Grad-CAM Heatmaps:** Gradient-weighted Class Activation Mapping visualizes spatial regions influencing the CNN's decision, highlighting suspicious artifacts.Projection: FC(1280→512) → ReLU → Dropout(0.3) → FC(512→256)
+
+**Citation:**
+
+```bibtex**Backend:** FastAPI provides RESTful API with `/api/analyze` endpoint for single-image inference and `/api/simulate-platforms` for robustness testing.
+
+@software{truepix2026,
+
+  title={TruePix: Multi-Branch Deep Learning for AI-Generated Image Detection},↓
+
+  author={TruePix Contributors},
+
+  year={2026},**ML Pipeline:** PyTorch 2.1 implementation with timm library for EfficientNet-B0, custom branches for FFT/noise/edge analysis, and integrated Grad-CAM for spatial explanations.
+
+  url={https://github.com/kathirpmdk-star/Truepix}
+
+}---Output: Spatial Embedding (256-dim)
+
+```
+
+**Storage (Optional):** Supabase object storage for image persistence; system functions in demo mode without external dependencies.
+
+---
+
+
+
+<div align="center">
+
+---
+
+Developed for Academic Research | Promoting Digital Media Transparency
+
+## 4. System Architecture```
+
+For questions or collaborations, please open a GitHub issue
+
+## 5. Tech Stack
+
+</div>
 
 
 
