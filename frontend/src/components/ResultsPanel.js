@@ -2,6 +2,12 @@ import React from 'react';
 import './ResultsPanel.css';
 
 function ResultsPanel({ result }) {
+  console.log('ResultsPanel received:', result);
+  console.log('Metadata:', result.metadata);
+  console.log('Executive Summary available:', !!result.metadata?.executive_summary);
+  console.log('Branch Findings available:', !!result.metadata?.branch_findings);
+  console.log('Grad-CAM available:', !!result.metadata?.gradcam_image);
+  
   const isAI = result.prediction === 'AI-Generated';
   const isUncertain = result.prediction === 'Uncertain';
   
@@ -87,6 +93,67 @@ function ResultsPanel({ result }) {
                 </span>
               </div>
             </div>
+          </div>
+        </div>
+      )}
+      
+      {result.metadata?.executive_summary && (
+        <div className="executive-summary-card">
+          <h3 className="card-title">📋 Explainability Report — Decision Basis</h3>
+          <div className="executive-summary-content">
+            {result.metadata.executive_summary.split('\n').map((line, idx) => {
+              if (line.startsWith('🤖') || line.startsWith('📷') || line.startsWith('❓')) {
+                return <div key={idx} className="summary-verdict">{line}</div>;
+              } else if (line.startsWith('**') && line.endsWith('**')) {
+                return <div key={idx} className="summary-heading">{line.replace(/\*\*/g, '')}</div>;
+              } else if (line.startsWith('•')) {
+                return <div key={idx} className="summary-bullet">{line}</div>;
+              } else if (line.trim() === '') {
+                return <div key={idx} className="summary-spacer"></div>;
+              } else {
+                return <div key={idx} className="summary-text">{line}</div>;
+              }
+            })}
+          </div>
+        </div>
+      )}
+      
+      {result.metadata?.branch_findings && (
+        <div className="explainability-card">
+          <h3 className="card-title">🔬 Detailed Technical Analysis — All Detection Methods</h3>
+          <div className="findings-grid">{Object.entries(result.metadata.branch_findings).map(([branch, finding]) => (
+              <div key={branch} className="finding-item">
+                <div className="finding-header">
+                  <span className={`finding-icon ${branch}`}>
+                    {branch === 'spatial' && '🖼️'}
+                    {branch === 'fft' && '📊'}
+                    {branch === 'noise' && '🔊'}
+                    {branch === 'edge' && '✏️'}
+                  </span>
+                  <span className="finding-title">
+                    {branch.charAt(0).toUpperCase() + branch.slice(1)} Analysis
+                  </span>
+                </div>
+                <p className="finding-text">{finding}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+      
+      {result.metadata?.gradcam_image && (
+        <div className="gradcam-card">
+          <h3 className="card-title">🔍 Visual Explanation — Grad-CAM Heatmap</h3>
+          <p className="gradcam-description">
+            This heatmap shows which regions of the image the spatial CNN focused on when making its prediction. 
+            <strong> Warmer colors</strong> (red, yellow) indicate regions that strongly influenced the AI-detection decision.
+          </p>
+          <div className="gradcam-image-container">
+            <img 
+              src={result.metadata.gradcam_image} 
+              alt="Grad-CAM Heatmap" 
+              className="gradcam-image"
+            />
           </div>
         </div>
       )}

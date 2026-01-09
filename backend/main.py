@@ -169,7 +169,10 @@ async def analyze_image(file: UploadFile = File(...)):
                 "filename": filename,
                 "timestamp": datetime.utcnow().isoformat(),
                 "model_version": ai_detector.model_version,
-                "raw_scores": result.get('raw_scores', {})
+                "raw_scores": result.get('raw_scores', {}),
+                "executive_summary": result.get('executive_summary', ''),
+                "branch_findings": result.get('branch_findings', {}),
+                "gradcam_image": result.get('gradcam_image', None)
             }
         )
     

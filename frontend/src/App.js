@@ -15,27 +15,31 @@ function App() {
     setLoading(true);
     setAnalysisResult(null);
     setShowSimulation(false);
-    
+
     try {
       // Create preview URL
       const imageUrl = URL.createObjectURL(file);
       setUploadedImage(imageUrl);
-      
+
       // Analyze image
       const formData = new FormData();
       formData.append('file', file);
-      
+
       const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
       const response = await fetch(`${API_URL}/api/analyze`, {
         method: 'POST',
         body: formData,
       });
-      
+
       if (!response.ok) {
         throw new Error('Analysis failed');
       }
-      
+
       const result = await response.json();
+      console.log('API Response:', result);
+      console.log('Executive Summary:', result.metadata?.executive_summary);
+      console.log('Branch Findings:', result.metadata?.branch_findings);
+      console.log('Grad-CAM:', result.metadata?.gradcam_image);
       setAnalysisResult(result);
     } catch (error) {
       console.error('Error analyzing image:', error);
@@ -63,13 +67,13 @@ function App() {
               ← New Image
             </button>
           </div>
-          
+
           <div className="content-grid">
             <div className="image-section">
               <h2>Uploaded Image</h2>
               <img src={uploadedImage} alt="Uploaded" className="uploaded-image" />
             </div>
-            
+
             <div className="results-section">
               {loading ? (
                 <div className="loading">
@@ -79,16 +83,16 @@ function App() {
               ) : analysisResult ? (
                 <>
                   <ResultsPanel result={analysisResult} />
-                  
-                  <button 
+
+                  <button
                     className="simulation-btn"
                     onClick={() => setShowSimulation(!showSimulation)}
                   >
                     {showSimulation ? '← Back to Results' : '🔍 Test Platform Stability'}
                   </button>
-                  
+
                   {showSimulation && (
-                    <PlatformSimulation 
+                    <PlatformSimulation
                       originalImage={uploadedImage}
                       originalResult={analysisResult}
                     />
