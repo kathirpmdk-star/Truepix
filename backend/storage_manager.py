@@ -61,11 +61,20 @@ class StorageManager:
             filename: Unique filename for the image
         
         Returns:
-            Public URL to access the uploaded image
+            Public URL to access the uploaded image (or base64 data URL in mock mode)
         """
         if self.mock_mode:
-            # Return mock URL for demo purposes
-            return f"https://demo.truepix.app/images/{filename}"
+            # Return base64 data URL - works in browser without storage
+            import base64
+            b64_data = base64.b64encode(image_data).decode('utf-8')
+            
+            # Detect image type
+            if filename.lower().endswith('.png'):
+                mime_type = 'image/png'
+            else:
+                mime_type = 'image/jpeg'
+            
+            return f"data:{mime_type};base64,{b64_data}"
         
         try:
             # Upload to Supabase Storage

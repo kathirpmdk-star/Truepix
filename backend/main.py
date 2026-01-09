@@ -47,9 +47,9 @@ platform_simulator = PlatformSimulator()
 
 # Response models
 class AnalysisResponse(BaseModel):
-    prediction: str  # "AI-Generated" or "Real"
+    prediction: str  # "AI-Generated", "Real", or "Uncertain"
     confidence: float
-    risk_level: str  # "High" / "Medium" / "Uncertain"
+    confidence_category: str  # "High" / "Medium" / "Low"
     explanation: str
     image_url: str
     metadata: Dict[str, Any]
@@ -152,26 +152,21 @@ async def analyze_image(file: UploadFile = File(...)):
         # Run AI detection model
         result = ai_detector.predict(img)
         
-        # Determine risk level based on confidence
-        confidence = result['confidence']
-        if confidence >= 0.85:
-            risk_level = "High"
-        elif confidence >= 0.65:
-            risk_level = "Medium"
-        else:
-            risk_level = "Uncertain"
+        # Get confidence category from model
+        confidence_category = result.get('confidence_category', 'Medium')
         
         return AnalysisResponse(
             prediction=result['prediction'],
-            confidence=round(confidence * 100, 2),
-            risk_level=risk_level,
+            confidence=round(result['confidence'] * 100, 2),
+            confidence_category=confidence_category,
             explanation=result['explanation'],
             image_url=image_url,
             metadata={
                 "image_id": image_id,
                 "filename": filename,
                 "timestamp": datetime.utcnow().isoformat(),
-                "model_version": ai_detector.model_version
+                "model_version": ai_detector.model_version,
+                "raw_scores": result.get('raw_scores', {})
             }
         )
     
