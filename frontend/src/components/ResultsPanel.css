@@ -1,0 +1,178 @@
+.results-panel {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.results-panel h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.prediction-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  animation: scaleIn 0.5s ease;
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.prediction-badge.ai {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+}
+
+.prediction-badge.real {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
+}
+
+.badge-icon {
+  font-size: 1.5rem;
+}
+
+.badge-text {
+  font-size: 1.2rem;
+}
+
+.confidence-section {
+  margin: 25px 0;
+}
+
+.confidence-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.confidence-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.confidence-bar {
+  height: 15px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.confidence-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1s ease, background-color 0.3s ease;
+  animation: fillBar 1.5s ease;
+}
+
+@keyframes fillBar {
+  from { width: 0; }
+}
+
+.risk-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 25px 0;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.risk-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.risk-badge {
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.explanation-section {
+  margin: 30px 0;
+  padding: 25px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(79, 172, 254, 0.05) 100%);
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+}
+
+.explanation-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #667eea;
+}
+
+.explanation-text {
+  color: #555;
+}
+
+.explanation-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.bullet {
+  color: #667eea;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.metadata-section {
+  margin: 25px 0;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.metadata-item {
+  margin: 8px 0;
+  color: #666;
+}
+
+.metadata-item strong {
+  color: #333;
+  margin-right: 8px;
+}
+
+.disclaimer {
+  margin-top: 25px;
+  padding: 15px;
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  border-radius: 8px;
+  color: #856404;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

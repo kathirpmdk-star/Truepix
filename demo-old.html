@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruePix - AI Image Detection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: url('gradient%20.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .hero-section {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto 40px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .hero-image-container {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .hero-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .hero-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .hero-title h1 {
+            font-size: 5rem;
+            font-weight: 900;
+            color: #000000;
+            text-shadow: 0 0 30px rgba(255,255,255,0.9), 
+                         0 0 60px rgba(255,255,255,0.6),
+                         3px 3px 6px rgba(255,255,255,1);
+            margin-bottom: 15px;
+            letter-spacing: 10px;
+        }
+        
+        .hero-title p {
+            font-size: 1.5rem;
+            color: #000000;
+            font-weight: 600;
+            text-shadow: 0 0 20px rgba(255,255,255,0.9),
+                         2px 2px 4px rgba(255,255,255,1);
+        }
+        
+        .header {
+            display: none;
+        }
+        
+        .main-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 1200px;
+            margin: 0 auto 40px auto;
+        }
+        
+        .upload-area {
+            border: 3px dashed #667eea;
+            border-radius: 15px;
+            padding: 60px 40px;
+            text-align: center;
+            cursor: pointer;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(79, 172, 254, 0.05) 100%);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+        
+        .upload-area:hover {
+            border-color: #4facfe;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(79, 172, 254, 0.1) 100%);
+            transform: scale(1.02);
+        }
+        
+        .upload-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        
+        .upload-text {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .upload-hint {
+            color: #888;
+        }
+        
+        #imagePreview {
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: none;
+        }
+        
+        .results {
+            display: none;
+            margin-top: 30px;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(79, 172, 254, 0.05) 100%);
+            border-radius: 15px;
+        }
+        
+        .prediction-badge {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .prediction-ai {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            color: white;
+        }
+        
+        .prediction-real {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+        }
+        
+        .confidence {
+            margin: 20px 0;
+        }
+        
+        .confidence-bar {
+            height: 20px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: width 1s ease;
+        }
+        
+        .explanation {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .spinner {
+            border: 4px solid rgba(102, 126, 234, 0.2);
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-section">
+            <div class="hero-title">
+                <h1>TRUEPIX</h1>
+                <p>AI Image Detection with Explainability</p>
+            </div>
+            
+            <div class="hero-image-container">
+                <img src="man%20and%20ai.png" alt="AI vs Human">
+            </div>
+        </div>
+        
+        <div class="header">
+            <h1>🎯 TRUEPIX</h1>
+            <p>AI Image Detection with Explainability</p>
+        </div>
+        
+        <div class="main-card">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📤</div>
+                <div class="upload-text">Click to upload or drag & drop</div>
+                <div class="upload-hint">JPG or PNG (max 10MB)</div>
+                <input type="file" id="fileInput" accept="image/jpeg,image/png" style="display: none;">
+            </div>
+            
+            <img id="imagePreview" alt="Uploaded image">
+            
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Analyzing image with AI detector...</p>
+            </div>
+            
+            <div class="results" id="results">
+                <h2>Analysis Results</h2>
+                <div id="predictionBadge" class="prediction-badge"></div>
+                
+                <div class="confidence">
+                    <h3>Confidence: <span id="confidenceValue"></span></h3>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" id="confidenceFill"></div>
+                    </div>
+                </div>
+                
+                <div class="explanation">
+                    <h3>🔍 Detailed Analysis</h3>
+                    <div id="explanationText"></div>
+                </div>
+                
+                <button class="btn" onclick="resetUpload()">Analyze Another Image</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const imagePreview = document.getElementById('imagePreview');
+        const loading = document.getElementById('loading');
+        const results = document.getElementById('results');
+        
+        uploadArea.onclick = () => fileInput.click();
+        
+        fileInput.onchange = (e) => {
+            const file = e.target.files[0];
+            if (file) analyzeImage(file);
+        };
+        
+        uploadArea.ondragover = (e) => {
+            e.preventDefault();
+            uploadArea.style.borderColor = '#4facfe';
+        };
+        
+        uploadArea.ondragleave = () => {
+            uploadArea.style.borderColor = '#667eea';
+        };
+        
+        uploadArea.ondrop = (e) => {
+            e.preventDefault();
+            uploadArea.style.borderColor = '#667eea';
+            const file = e.dataTransfer.files[0];
+            if (file && (file.type === 'image/jpeg' || file.type === 'image/png')) {
+                analyzeImage(file);
+            }
+        };
+        
+        async function analyzeImage(file) {
+            // Show preview
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+            
+            // Show loading
+            uploadArea.style.display = 'none';
+            loading.style.display = 'block';
+            results.style.display = 'none';
+            
+            // Send to API
+            const formData = new FormData();
+            formData.append('file', file);
+            
+            try {
+                const response = await fetch('http://localhost:8000/api/analyze', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (!response.ok) throw new Error('Analysis failed');
+                
+                const data = await response.json();
+                displayResults(data);
+            } catch (error) {
+                alert('Error: ' + error.message + '\\n\\nMake sure the backend server is running on port 8000');
+                resetUpload();
+            }
+        }
+        
+        function displayResults(data) {
+            loading.style.display = 'none';
+            results.style.display = 'block';
+            
+            // Prediction badge
+            const badge = document.getElementById('predictionBadge');
+            badge.textContent = (data.prediction === 'AI-Generated' ? '🤖 ' : '📷 ') + data.prediction;
+            badge.className = 'prediction-badge ' + (data.prediction === 'AI-Generated' ? 'prediction-ai' : 'prediction-real');
+            
+            // Confidence
+            document.getElementById('confidenceValue').textContent = data.confidence.toFixed(1) + '%';
+            document.getElementById('confidenceFill').style.width = data.confidence + '%';
+            
+            // Explanation
+            const explanations = data.explanation.split(' | ');
+            const explanationHTML = explanations.map(exp => `<p style="margin: 10px 0;">• ${exp}</p>`).join('');
+            document.getElementById('explanationText').innerHTML = explanationHTML;
+        }
+        
+        function resetUpload() {
+            uploadArea.style.display = 'block';
+            imagePreview.style.display = 'none';
+            loading.style.display = 'none';
+            results.style.display = 'none';
+            fileInput.value = '';
+        }
+    </script>
+</body>
+</html>
