@@ -57,16 +57,17 @@
 
 .image-section,
 .results-section {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 30px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .image-section h2,
 .results-section h2 {
   margin-bottom: 20px;
-  color: #333;
+  color: #f1f5f9;
   font-size: 1.5rem;
 }
 
