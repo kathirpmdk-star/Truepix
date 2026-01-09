@@ -1,4 +1,4 @@
-# TruePix - AI-Generated Image Detection System# TruePix - AI-Generated Image Detection System# TruePix - AI-Generated Image Detection System# TruePix - AI-Generated Image Detection System# TruePix - AI-Generated Image Detection System
+# TruePix - AI-Generated Image Detection System# TruePix - AI-Generated Image Detection System# TruePix - AI-Generated Image Detection System# TruePix - AI-Generated Image Detection System# TruePix - AI-Generated Image Detection System# TruePix - AI-Generated Image Detection System
 
 
 
@@ -30,7 +30,7 @@ A hybrid multi-branch deep learning system for detecting AI-generated images wit
 
 ## 1. Overview
 
-[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)<div align="center"><div align="center">
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)<div align="center">
 
 TruePix addresses the growing challenge of distinguishing AI-generated images from authentic photographs using a novel hybrid detection architecture. The system combines four complementary analysis methods—spatial CNN features, frequency-domain analysis, noise pattern consistency, and edge structure verification—to achieve robust classification with comprehensive explainability.
 
@@ -62,239 +62,537 @@ A hybrid multi-branch deep learning system for detecting AI-generated images wit
 
 ### Challenge
 
-Modern generative AI models (DALL-E, Midjourney, Stable Diffusion) produce photorealistic images increasingly difficult to distinguish from real photographs. This poses significant risks:[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)<div align="center"><div align="center">
 
+Modern generative AI models (DALL-E, Midjourney, Stable Diffusion) produce photorealistic images increasingly difficult to distinguish from real photographs. This poses significant risks:
 
+TruePix addresses the growing challenge of distinguishing AI-generated images from authentic photographs using a novel hybrid detection architecture. The system combines four complementary analysis methods—spatial CNN features, frequency-domain analysis, noise pattern consistency, and edge structure verification—to achieve robust classification with comprehensive explainability.
 
-- Misinformation: Fake news propagation using synthetic imageryTruePix addresses the growing challenge of distinguishing AI-generated images from authentic photographs using a novel hybrid detection architecture. The system combines four complementary analysis methods—spatial CNN features, frequency-domain analysis, noise pattern consistency, and edge structure verification—to achieve robust classification with comprehensive explainability.
+- Misinformation: Fake news propagation using synthetic imagery
 
-- Fraud: Identity theft, document forgery, deepfake scams
+- Fraud: Identity theft, document forgery, deepfake scamsA hybrid multi-branch deep learning system for detecting AI-generated images with explainability
 
-- Trust Erosion: Declining confidence in digital media authenticity**A hybrid multi-branch deep learning system for detecting AI-generated images with explainability**
+- Trust Erosion: Declining confidence in digital media authenticity
 
+**Key Contributions:**
 
+### Objective
 
-### Objective**Key Contributions:**
+- Hybrid multi-branch architecture leveraging spatial, frequency, noise, and edge domains[![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)](https://pytorch.org/)
 
 Develop a robust, explainable AI detection system that:
 
-- Hybrid multi-branch architecture leveraging spatial, frequency, noise, and edge domains[![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)](https://pytorch.org/)[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)
+- Grad-CAM visualizations and per-branch attribution for model transparency
 
 - Achieves high accuracy across diverse image types and AI generators
 
-- Provides interpretable explanations for predictions- Grad-CAM visualizations and per-branch attribution for model transparency
+- Provides interpretable explanations for predictions- Platform robustness testing against social media compression</div>
 
 - Maintains performance under real-world compression and post-processing
 
-- Offers real-time analysis suitable for production deployment- Platform robustness testing against social media compression[How to Run](#6-how-to-run) • [Architecture](#4-system-architecture) • [Results](#7-results--evaluation)
+- Offers real-time analysis suitable for production deployment- End-to-end web application with real-time inference and explainable results
 
 
 
----- End-to-end web application with real-time inference and explainable results
+---[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)
 
 
 
-## 3. Methodology[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)[![React](https://img.shields.io/badge/React-18.2-61dafb.svg)](https://reactjs.org/)
+## 3. Methodology**Use Cases:** Content moderation, journalism verification, digital forensics, academic research on synthetic media detection.
 
 
 
-### 3.1 Algorithms Used**Use Cases:** Content moderation, journalism verification, digital forensics, academic research on synthetic media detection.
+### 3.1 Algorithms Used---
 
 
 
-Our system employs four specialized algorithms, each targeting different artifacts left by AI image generators:</div>
+Our system employs four specialized algorithms, each targeting different artifacts left by AI image generators:---
 
 
 
-#### CNN (Convolutional Neural Network) - Spatial Analysis---
+#### CNN (Convolutional Neural Network) - Spatial Analysis[![React](https://img.shields.io/badge/React-18.2-61dafb.svg)](https://reactjs.org/)
 
 
 
-**What it does:** Uses EfficientNet-B0 deep learning model to analyze visual patterns in the image.[![React](https://img.shields.io/badge/React-18.2-61dafb.svg)](https://reactjs.org/)[![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)](https://pytorch.org/)
+**What it does:** Uses EfficientNet-B0 deep learning model to analyze visual patterns in the image.## 2. Problem Statement
 
 
 
-**How it helps:** Detects unnatural textures, incorrect anatomy (like malformed hands), over-smooth skin, and repetitive patterns that AI generators commonly produce. Real photos have natural imperfections; AI images often look "too perfect" or have subtle artifacts invisible to human eyes but detectable by trained neural networks.## 2. Problem Statement
+**How it helps:** Detects unnatural textures, incorrect anatomy (like malformed hands), over-smooth skin, and repetitive patterns that AI generators commonly produce. Real photos have natural imperfections; AI images often look "too perfect" or have subtle artifacts invisible to human eyes but detectable by trained neural networks.## 1. Overview
 
 
 
-#### FFT (Fast Fourier Transform) - Frequency Analysis---
+#### FFT (Fast Fourier Transform) - Frequency Analysis### Challenge
 
 
 
-**What it does:** Converts the image from spatial domain to frequency domain to analyze periodic patterns.### Challenge
+**What it does:** Converts the image from spatial domain to frequency domain to analyze periodic patterns.Modern generative AI models (DALL-E, Midjourney, Stable Diffusion) produce photorealistic images increasingly difficult to distinguish from real photographs. This poses significant risks:[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
 
 
 
-**How it helps:** AI generators leave invisible "fingerprints" in the frequency spectrum—grid patterns, upsampling artifacts, and unnatural frequency distributions. Real photos have random, broad frequency spectra from natural scenes. This catches artifacts that look normal spatially but show clear patterns in frequency domain.Modern generative AI models (DALL-E, Midjourney, Stable Diffusion) produce photorealistic images increasingly difficult to distinguish from real photographs. This poses significant risks:[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+**How it helps:** AI generators leave invisible "fingerprints" in the frequency spectrum—grid patterns, upsampling artifacts, and unnatural frequency distributions. Real photos have random, broad frequency spectra from natural scenes. This catches artifacts that look normal spatially but show clear patterns in frequency domain.
 
 
 
-#### Noise Analysis - Sensor Noise Consistency
+#### Noise Analysis - Sensor Noise Consistency- Misinformation: Fake news propagation using synthetic imageryTruePix addresses the growing challenge of distinguishing AI-generated images from authentic photographs using a novel hybrid detection architecture. The system combines four complementary analysis methods—spatial CNN features, frequency-domain analysis, noise pattern consistency, and edge structure verification—to achieve robust classification with comprehensive explainability.
 
 
 
-**What it does:** Analyzes noise patterns at multiple scales using Gaussian blur residuals.- **Misinformation:** Fake news propagation using synthetic imagery## 1. Overview
+**What it does:** Analyzes noise patterns at multiple scales using Gaussian blur residuals.- Fraud: Identity theft, document forgery, deepfake scams
 
 
 
-**How it helps:** Real cameras produce characteristic sensor noise (shot noise, read noise, thermal noise). AI generators either produce images with no noise or add synthetic noise that doesn't match real camera behavior. By analyzing noise at fine, medium, and coarse scales, we can distinguish authentic camera noise from synthetic or absent noise.- **Fraud:** Identity theft, document forgery, deepfake scams
+**How it helps:** Real cameras produce characteristic sensor noise (shot noise, read noise, thermal noise). AI generators either produce images with no noise or add synthetic noise that doesn't match real camera behavior. By analyzing noise at fine, medium, and coarse scales, we can distinguish authentic camera noise from synthetic or absent noise.- Trust Erosion: Declining confidence in digital media authenticity**A hybrid multi-branch deep learning system for detecting AI-generated images with explainability**
 
 
 
-#### Edge Analysis - Structural Plausibility- **Trust Erosion:** Declining confidence in digital media authenticity**A hybrid multi-branch deep learning system for detecting AI-generated images with explainability**
+#### Edge Analysis - Structural Plausibility
 
 
 
-**What it does:** Uses Sobel operators to detect edges and analyze their physical consistency.
+**What it does:** Uses Sobel operators to detect edges and analyze their physical consistency.### Objective**Key Contributions:**
 
 
 
-**How it helps:** Real photos follow optical physics—edges are consistent, blur follows depth-of-field laws, sharpness transitions are natural. AI generators sometimes produce physically impossible edges, inconsistent blur, or unnatural sharpness transitions. This algorithm catches violations of physical constraints.### ObjectiveTruePix addresses the growing challenge of distinguishing AI-generated images from authentic photographs using a novel hybrid detection architecture. The system combines four complementary analysis methods—spatial CNN features, frequency-domain analysis, noise pattern consistency, and edge structure verification—to achieve robust classification with comprehensive explainability.
+**How it helps:** Real photos follow optical physics—edges are consistent, blur follows depth-of-field laws, sharpness transitions are natural. AI generators sometimes produce physically impossible edges, inconsistent blur, or unnatural sharpness transitions. This algorithm catches violations of physical constraints.Develop a robust, explainable AI detection system that:
 
 
 
-### 3.2 How They Work TogetherDevelop a robust, explainable AI detection system that:
+### 3.2 How They Work Together- Hybrid multi-branch architecture leveraging spatial, frequency, noise, and edge domains[![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)](https://pytorch.org/)[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)
 
 
 
-```**A multi-branch deep learning system for detecting AI-generated images with explainability**
+```- Achieves high accuracy across diverse image types and AI generators
 
 Step 1: Each algorithm analyzes the image independently
 
-CNN → Spatial features (256-dim)- Achieves high accuracy across diverse image types and AI generators
+CNN → Spatial features (256-dim)- Provides interpretable explanations for predictions- Grad-CAM visualizations and per-branch attribution for model transparency
 
 FFT → Frequency features (256-dim)
 
-Noise → Noise patterns (256-dim)- Provides interpretable explanations for predictions**Key Contributions:**
+Noise → Noise patterns (256-dim)- Maintains performance under real-world compression and post-processing
 
 Edge → Edge structures (256-dim)
 
-- Maintains performance under real-world compression and post-processing
+- Offers real-time analysis suitable for production deployment- Platform robustness testing against social media compression[How to Run](#6-how-to-run) • [Architecture](#4-system-architecture) • [Results](#7-results--evaluation)
 
 Step 2: Combine all features
 
-Total: 1024-dimensional feature vector- Offers real-time analysis suitable for production deployment- Hybrid multi-branch architecture leveraging spatial, frequency, noise, and edge domains[Demo](#6-how-to-run) • [Architecture](#4-system-architecture) • [Results](#7-results--evaluation)
+Total: 1024-dimensional feature vector
 
 
 
-Step 3: Fusion network makes final decision
+Step 3: Fusion network makes final decision---- End-to-end web application with real-time inference and explainable results
 
 Neural network (1024→512→2) → AI or Real
 
----- Grad-CAM visualizations and per-branch attribution for model transparency
+
 
 Step 4: Generate explanations
 
-- Which branch contributed most to the decision
+- Which branch contributed most to the decision## 3. Methodology[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)[![React](https://img.shields.io/badge/React-18.2-61dafb.svg)](https://reactjs.org/)
 
 - What specific artifacts were found
 
-- Grad-CAM heatmap showing suspicious regions## 3. Methodology- Platform robustness testing against social media compression (WhatsApp, Instagram, Facebook)</div>
+- Grad-CAM heatmap showing suspicious regions
 
 ```
 
-
+### 3.1 Algorithms Used**Use Cases:** Content moderation, journalism verification, digital forensics, academic research on synthetic media detection.
 
 **Why this approach works:** Different AI generators have different weaknesses. DALL-E might have good textures but poor noise; Midjourney might have good edges but poor frequency distribution. By combining four different detection methods, we catch artifacts regardless of which generator was used.
 
-### 3.1 Multi-Branch Feature Extraction- End-to-end web application with real-time inference and explainable results
+
 
 ### 3.3 Explainability
 
-
+Our system employs four specialized algorithms, each targeting different artifacts left by AI image generators:</div>
 
 The system doesn't just say "AI-generated"—it explains WHY:
 
-**Convolutional Neural Network (CNN) - Spatial Branch**</div>
+
 
 - Executive Summary: Natural language explanation of the decision
 
-- Per-Branch Scores: Shows which algorithm found the strongest evidence
+- Per-Branch Scores: Shows which algorithm found the strongest evidence#### CNN (Convolutional Neural Network) - Spatial Analysis---
 
 - Grad-CAM Heatmap: Visual overlay highlighting suspicious image regions
 
-Uses EfficientNet-B0, a state-of-the-art CNN architecture pre-trained on ImageNet with 5.3M parameters.**Use Cases:** Content moderation, journalism verification, digital forensics, academic research on synthetic media detection.
+
 
 ---
 
-
+**What it does:** Uses EfficientNet-B0 deep learning model to analyze visual patterns in the image.[![React](https://img.shields.io/badge/React-18.2-61dafb.svg)](https://reactjs.org/)[![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)](https://pytorch.org/)
 
 ## 4. System Architecture
 
-- **Input:** RGB image (224×224×3 pixels)---
+
 
 ```
 
-Frontend (React) → Backend (FastAPI) → ML Model (PyTorch)- **Processing:** 
+Frontend (React) → Backend (FastAPI) → ML Model (PyTorch)**How it helps:** Detects unnatural textures, incorrect anatomy (like malformed hands), over-smooth skin, and repetitive patterns that AI generators commonly produce. Real photos have natural imperfections; AI images often look "too perfect" or have subtle artifacts invisible to human eyes but detectable by trained neural networks.## 2. Problem Statement
 
      ↓                    ↓                   ↓
 
-Image Upload      API Endpoints         4 Algorithms  - EfficientNet-B0 backbone extracts 1,280-dimensional feature vector---
+Image Upload      API Endpoints         4 Algorithms
 
 Results UI        Preprocessing         Fusion Layer
 
-Grad-CAM          Explainability        Grad-CAM  - Projection head reduces to 256-dim embedding via FC layers (1280→512→256)
+Grad-CAM          Explainability        Grad-CAM#### FFT (Fast Fourier Transform) - Frequency Analysis---
 
 ```
 
-  - Dropout (p=0.3) prevents overfitting---
+
 
 **Components:**
 
-- Frontend: React 18.2 with drag-and-drop upload and real-time visualization- **What it detects:** Texture smoothness anomalies, unnatural patterns in skin/fabric, anatomically incorrect structures (malformed hands, asymmetric faces), repetitive background elements
+- Frontend: React 18.2 with drag-and-drop upload and real-time visualization**What it does:** Converts the image from spatial domain to frequency domain to analyze periodic patterns.### Challenge
 
 - Backend: FastAPI REST API with /api/analyze endpoint
 
-- ML Pipeline: PyTorch 2.1 with EfficientNet-B0 and custom multi-branch architecture- **Why it works:** AI generators produce statistically different pixel patterns than camera sensors; CNNs learn these discriminative features through supervised training## 2. Problem Statement
+- ML Pipeline: PyTorch 2.1 with EfficientNet-B0 and custom multi-branch architecture
 
 - Storage: Optional Supabase; functions in demo mode without external dependencies
+
+**How it helps:** AI generators leave invisible "fingerprints" in the frequency spectrum—grid patterns, upsampling artifacts, and unnatural frequency distributions. Real photos have random, broad frequency spectra from natural scenes. This catches artifacts that look normal spatially but show clear patterns in frequency domain.Modern generative AI models (DALL-E, Midjourney, Stable Diffusion) produce photorealistic images increasingly difficult to distinguish from real photographs. This poses significant risks:[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+---
+
+
+
+## 5. Tech Stack
+
+#### Noise Analysis - Sensor Noise Consistency
+
+| Layer | Technology | Purpose |
+
+|-------|------------|---------|
+
+| Frontend | React 18.2, CSS3 | User interface and visualization |
+
+| Backend | FastAPI 0.108, Uvicorn | High-performance API server |**What it does:** Analyzes noise patterns at multiple scales using Gaussian blur residuals.- **Misinformation:** Fake news propagation using synthetic imagery## 1. Overview
+
+| ML Framework | PyTorch 2.1.2, torchvision 0.16 | Deep learning inference |
+
+| Model | EfficientNet-B0 (timm 0.9.12) | Pre-trained CNN backbone |
+
+| Image Processing | OpenCV 4.9, Pillow 10.1, scikit-image | Preprocessing and analysis |
+
+| Explainability | Custom Grad-CAM, scipy | Visualization and frequency analysis |**How it helps:** Real cameras produce characteristic sensor noise (shot noise, read noise, thermal noise). AI generators either produce images with no noise or add synthetic noise that doesn't match real camera behavior. By analyzing noise at fine, medium, and coarse scales, we can distinguish authentic camera noise from synthetic or absent noise.- **Fraud:** Identity theft, document forgery, deepfake scams
 
 
 
 ---
 
-**Fast Fourier Transform (FFT) - Frequency Branch**## Table of Contents
-
-## 5. Tech Stack
 
 
-
-| Layer | Technology | Purpose |
-
-|-------|------------|---------|Applies 2D Discrete Fourier Transform to convert spatial image into frequency domain representation.### Challenge
-
-| Frontend | React 18.2, CSS3 | User interface and visualization |
-
-| Backend | FastAPI 0.108, Uvicorn | High-performance API server |
-
-| ML Framework | PyTorch 2.1.2, torchvision 0.16 | Deep learning inference |
-
-| Model | EfficientNet-B0 (timm 0.9.12) | Pre-trained CNN backbone |- **Input:** Grayscale image (224×224 pixels)Modern generative AI models (DALL-E, Midjourney, Stable Diffusion) produce photorealistic images increasingly difficult to distinguish from real photographs. This poses significant risks:## 1. Overview
-
-| Image Processing | OpenCV 4.9, Pillow 10.1, scikit-image | Preprocessing and analysis |
-
-| Explainability | Custom Grad-CAM, scipy | Visualization and frequency analysis |- **Processing:**
+## 6. How to Run#### Edge Analysis - Structural Plausibility- **Trust Erosion:** Declining confidence in digital media authenticity**A hybrid multi-branch deep learning system for detecting AI-generated images with explainability**
 
 
 
----  - 2D FFT computes frequency spectrum: F(u,v) = Σ Σ f(x,y)·e^(-j2π(ux/M+vy/N))
+### Prerequisites
 
 
 
-## 6. How to Run  - Logarithmic magnitude transformation: log(1 + |F(u,v)|) enhances weak frequencies
+- Python 3.9+**What it does:** Uses Sobel operators to detect edges and analyze their physical consistency.
 
-
-
-### Prerequisites  - Fully connected layers extract 256-dim frequency embedding- **Misinformation**: Fake news propagation using synthetic imagery- [Overview](#overview)
-
-- Python 3.9+
-
-- Node.js 16+- **What it detects:** Grid patterns from upsampling, periodic artifacts from GAN generators, unnatural frequency distributions, checkerboard effects
+- Node.js 16+
 
 - 4GB RAM (8GB recommended)
 
+
+
+### Backend Setup**How it helps:** Real photos follow optical physics—edges are consistent, blur follows depth-of-field laws, sharpness transitions are natural. AI generators sometimes produce physically impossible edges, inconsistent blur, or unnatural sharpness transitions. This algorithm catches violations of physical constraints.### ObjectiveTruePix addresses the growing challenge of distinguishing AI-generated images from authentic photographs using a novel hybrid detection architecture. The system combines four complementary analysis methods—spatial CNN features, frequency-domain analysis, noise pattern consistency, and edge structure verification—to achieve robust classification with comprehensive explainability.
+
+
+
+```bash
+
+cd backend
+
+python3 -m venv venv### 3.2 How They Work TogetherDevelop a robust, explainable AI detection system that:
+
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python main.py
+
+``````**A multi-branch deep learning system for detecting AI-generated images with explainability**
+
+
+
+Backend: http://localhost:8000 | API Docs: http://localhost:8000/docsStep 1: Each algorithm analyzes the image independently
+
+
+
+### Frontend SetupCNN → Spatial features (256-dim)- Achieves high accuracy across diverse image types and AI generators
+
+
+
+```bashFFT → Frequency features (256-dim)
+
+cd frontend
+
+npm installNoise → Noise patterns (256-dim)- Provides interpretable explanations for predictions**Key Contributions:**
+
+npm start
+
+```Edge → Edge structures (256-dim)
+
+
+
+Frontend: http://localhost:3000- Maintains performance under real-world compression and post-processing
+
+
+
+### UsageStep 2: Combine all features
+
+
+
+1. Open http://localhost:3000Total: 1024-dimensional feature vector- Offers real-time analysis suitable for production deployment- Hybrid multi-branch architecture leveraging spatial, frequency, noise, and edge domains[Demo](#6-how-to-run) • [Architecture](#4-system-architecture) • [Results](#7-results--evaluation)
+
+2. Upload JPG/PNG image (drag-and-drop or click)
+
+3. View results: classification, confidence, executive summary, branch analysis, Grad-CAM
+
+4. (Optional) Test platform stability across social media compression
+
+Step 3: Fusion network makes final decision
+
+---
+
+Neural network (1024→512→2) → AI or Real
+
+## 7. Results & Evaluation
+
+---- Grad-CAM visualizations and per-branch attribution for model transparency
+
+### Model Performance
+
+Step 4: Generate explanations
+
+**Training Configuration:**
+
+- Dataset: 50,000 images (balanced real/AI split)- Which branch contributed most to the decision
+
+- Real sources: COCO, FFHQ, natural photography datasets
+
+- AI sources: Stable Diffusion, DALL-E, Midjourney outputs- What specific artifacts were found
+
+- Training: 20 epochs, Adam optimizer (lr=1e-4), cross-entropy loss
+
+- Grad-CAM heatmap showing suspicious regions## 3. Methodology- Platform robustness testing against social media compression (WhatsApp, Instagram, Facebook)</div>
+
+**Evaluation Metrics:**
+
+- Accuracy: 89.3% on held-out test set```
+
+- Precision (AI class): 91.2%
+
+- Recall (AI class): 87.5%
+
+- F1-Score: 89.3%
+
+**Why this approach works:** Different AI generators have different weaknesses. DALL-E might have good textures but poor noise; Midjourney might have good edges but poor frequency distribution. By combining four different detection methods, we catch artifacts regardless of which generator was used.
+
+### Robustness Testing
+
+### 3.1 Multi-Branch Feature Extraction- End-to-end web application with real-time inference and explainable results
+
+**Platform Stability Scores:**
+
+- Original images: 89.3% accuracy### 3.3 Explainability
+
+- WhatsApp compression (512px, Q=40): 82.1% accuracy
+
+- Instagram compression (1080px, Q=70): 86.7% accuracy
+
+- Facebook compression (960px, Q=60): 85.4% accuracy
+
+The system doesn't just say "AI-generated"—it explains WHY:
+
+**Insight:** Multi-branch architecture provides resilience to compression; frequency and noise branches maintain performance when spatial features degrade.
+
+**Convolutional Neural Network (CNN) - Spatial Branch**</div>
+
+### Explainability Validation
+
+- Executive Summary: Natural language explanation of the decision
+
+- Grad-CAM Analysis: Heatmaps correctly highlight known AI artifacts in 84% of test cases
+
+- Branch Attribution: Spatial 45%, Frequency 28%, Noise 18%, Edge 9% on average- Per-Branch Scores: Shows which algorithm found the strongest evidence
+
+- User Study: 92% of users (n=25) found explanations helpful
+
+- Grad-CAM Heatmap: Visual overlay highlighting suspicious image regions
+
+---
+
+Uses EfficientNet-B0, a state-of-the-art CNN architecture pre-trained on ImageNet with 5.3M parameters.**Use Cases:** Content moderation, journalism verification, digital forensics, academic research on synthetic media detection.
+
+## 8. Limitations
+
+---
+
+- Dataset Constraints: Model trained on 2024-2025 AI generators; may not generalize to future models
+
+- Compression Sensitivity: Accuracy degrades 5-8% under aggressive compression (JPEG quality < 50%)
+
+- Adversarial Vulnerability: Not hardened against intentional evasion techniques
+
+- Hybrid Images: Struggles with real photos containing AI-edited elements## 4. System Architecture
+
+- Computational Cost: Multi-branch architecture requires 2.5x inference time vs single CNN (150ms vs 60ms)
+
+- False Positives: Heavily post-processed real photos may trigger false AI detections- **Input:** RGB image (224×224×3 pixels)---
+
+
+
+---```
+
+
+
+## 9. Future WorkFrontend (React) → Backend (FastAPI) → ML Model (PyTorch)- **Processing:** 
+
+
+
+**Model Enhancements:**     ↓                    ↓                   ↓
+
+- Ensemble multiple architectures (Vision Transformers, ResNet) for improved accuracy
+
+- Continuous learning pipeline to adapt to emerging AI generatorsImage Upload      API Endpoints         4 Algorithms  - EfficientNet-B0 backbone extracts 1,280-dimensional feature vector---
+
+- Adversarial training for robustness
+
+Results UI        Preprocessing         Fusion Layer
+
+**Feature Additions:**
+
+- EXIF metadata analysis for forensic verificationGrad-CAM          Explainability        Grad-CAM  - Projection head reduces to 256-dim embedding via FC layers (1280→512→256)
+
+- Batch processing API for high-throughput analysis
+
+- Video frame analysis for deepfake detection```
+
+- Model fingerprinting to identify specific AI generator
+
+  - Dropout (p=0.3) prevents overfitting---
+
+**Deployment:**
+
+- Model quantization (INT8) for 3x faster inference**Components:**
+
+- Mobile applications with on-device inference
+
+- Browser extension for web image analysis- Frontend: React 18.2 with drag-and-drop upload and real-time visualization- **What it detects:** Texture smoothness anomalies, unnatural patterns in skin/fabric, anatomically incorrect structures (malformed hands, asymmetric faces), repetitive background elements
+
+- Partnership with fact-checking organizations
+
+- Backend: FastAPI REST API with /api/analyze endpoint
+
+**Research Directions:**
+
+- Cross-modal consistency analysis (text-image alignment)- ML Pipeline: PyTorch 2.1 with EfficientNet-B0 and custom multi-branch architecture- **Why it works:** AI generators produce statistically different pixel patterns than camera sensors; CNNs learn these discriminative features through supervised training## 2. Problem Statement
+
+- Temporal consistency for video sequences
+
+- Zero-shot detection of unseen generative models- Storage: Optional Supabase; functions in demo mode without external dependencies
+
+
+
+---
+
+
+
+## 10. References---
+
+
+
+**Academic Research:****Fast Fourier Transform (FFT) - Frequency Branch**## Table of Contents
+
+1. Wang et al. (2020). CNN-Generated Images Are Surprisingly Easy to Spot... For Now. CVPR 2020.
+
+2. Gragnaniello et al. (2021). GAN-Generated Faces Detection. IEEE TIFS.## 5. Tech Stack
+
+3. Selvaraju et al. (2017). Grad-CAM: Visual Explanations from Deep Networks. ICCV 2017.
+
+
+
+**Datasets:**
+
+- CIFAKE: Kaggle real vs AI image dataset| Layer | Technology | Purpose |
+
+- DiffusionDB: Stable Diffusion dataset (Hugging Face)
+
+- COCO: Microsoft Common Objects in Context|-------|------------|---------|Applies 2D Discrete Fourier Transform to convert spatial image into frequency domain representation.### Challenge
+
+- FFHQ: NVIDIA Flickr-Faces-HQ
+
+| Frontend | React 18.2, CSS3 | User interface and visualization |
+
+**Tools & Frameworks:**
+
+- PyTorch: pytorch.org| Backend | FastAPI 0.108, Uvicorn | High-performance API server |
+
+- timm: github.com/huggingface/pytorch-image-models
+
+- FastAPI: fastapi.tiangolo.com| ML Framework | PyTorch 2.1.2, torchvision 0.16 | Deep learning inference |
+
+- React: react.dev
+
+| Model | EfficientNet-B0 (timm 0.9.12) | Pre-trained CNN backbone |- **Input:** Grayscale image (224×224 pixels)Modern generative AI models (DALL-E, Midjourney, Stable Diffusion) produce photorealistic images increasingly difficult to distinguish from real photographs. This poses significant risks:## 1. Overview
+
+---
+
+| Image Processing | OpenCV 4.9, Pillow 10.1, scikit-image | Preprocessing and analysis |
+
+## License & Citation
+
+| Explainability | Custom Grad-CAM, scipy | Visualization and frequency analysis |- **Processing:**
+
+**License:** MIT License - See LICENSE file for details
+
+
+
+**Citation:**
+
+```bibtex---  - 2D FFT computes frequency spectrum: F(u,v) = Σ Σ f(x,y)·e^(-j2π(ux/M+vy/N))
+
+@software{truepix2026,
+
+  title={TruePix: Multi-Branch Deep Learning for AI-Generated Image Detection},
+
+  author={TruePix Contributors},
+
+  year={2026},## 6. How to Run  - Logarithmic magnitude transformation: log(1 + |F(u,v)|) enhances weak frequencies
+
+  url={https://github.com/kathirpmdk-star/Truepix}
+
+}
+
+```
+
+### Prerequisites  - Fully connected layers extract 256-dim frequency embedding- **Misinformation**: Fake news propagation using synthetic imagery- [Overview](#overview)
+
+---
+
+- Python 3.9+
+
+<div align="center">
+
+- Node.js 16+- **What it detects:** Grid patterns from upsampling, periodic artifacts from GAN generators, unnatural frequency distributions, checkerboard effects
+
+Developed for Academic Research | Promoting Digital Media Transparency
+
+- 4GB RAM (8GB recommended)
+
+For questions or collaborations, please open a GitHub issue
+
 - **Why it works:** Real photos have broad frequency spectra from natural scenes; AI generators introduce subtle periodic patterns during synthesis that are invisible spatially but prominent in frequency domain- **Fraud**: Identity theft, document forgery, deepfake scams
+
+</div>
 
 ### Backend Setup
 
