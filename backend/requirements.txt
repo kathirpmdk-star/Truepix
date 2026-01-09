@@ -1,3 +1,7 @@
+# PyTorch with CUDA support (only needed for training on GPU)
+# Uncomment the line below if you want to train with GPU:
+# --extra-index-url https://download.pytorch.org/whl/cu118
+
 # FastAPI Backend Dependencies
 fastapi==0.108.0
 uvicorn[standard]==0.25.0

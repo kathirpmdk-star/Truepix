@@ -42,7 +42,10 @@ app.add_middleware(
 
 # Initialize components
 storage_manager = StorageManager()
-ai_detector = AIDetectorModel()
+ai_detector = AIDetectorModel(
+    model_path="checkpoints/hybrid_detector_calibrated.pth",
+    device='cpu'  # Use CPU for inference (GPU only needed for training)
+)
 platform_simulator = PlatformSimulator()
 
 # Response models
