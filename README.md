@@ -26,11 +26,12 @@ A production-ready deep learning system that detects AI-generated images with 89
 
 
 
-## OverviewA sophisticated deep learning system that detects AI-generated images and provides explainable results using a multi-branch hybrid architecture.
+## Overview 
+## A sophisticated deep learning system that detects AI-generated images and provides explainable results using a multi-branch hybrid architecture.
 
 
 
-TruePix is an advanced AI image detection system designed to distinguish between AI-generated images and authentic photographs. In an era where generative AI models (DALL-E, Midjourney, Stable Diffusion) create photorealistic synthetic images, TruePix provides robust detection with comprehensive explainability.[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)Overview
+**TruePix is an advanced AI image detection system designed to distinguish between AI-generated images and authentic photographs. In an era where generative AI models (DALL-E, Midjourney, Stable Diffusion) create photorealistic synthetic images, TruePix provides robust detection with comprehensive explainability.[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)Overview
 
 
 
@@ -64,47 +65,6 @@ TruePix is an advanced AI image detection system designed to distinguish between
 
 - Academic research on AI-generated content4. [System Architecture](#system-architecture)[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)TruePix is a system designed to distinguish AI-generated images from real photographs using image forensic cues and deep learning.
 
-
-
----5. [Detection Algorithms](#detection-algorithms)
-
-
-
-## 📋 Table of Contents6. [Technology Stack](#technology-stack)---
-
-
-
-- [Architecture](#-architecture)7. [How to Run This Project](#how-to-run-this-project)
-
-- [Installation](#-installation)
-
-- [Quick Start](#-quick-start)8. [How to Use TruePix](#how-to-use-truepix)[![React](https://img.shields.io/badge/React-18.2-61dafb.svg)](https://reactjs.org/)
-
-- [Usage](#-usage)
-
-- [Detection Algorithms](#-detection-algorithms)9. [Results and Performance](#results-and-performance)
-
-- [API Reference](#-api-reference)
-
-- [Performance](#-performance)10. [What Makes TruePix Unique](#what-makes-truepix-unique)## Overview
-
-- [Technology Stack](#-technology-stack)
-
-- [Project Structure](#-project-structure)11. [Limitations](#limitations)
-
-- [Contributing](#-contributing)
-
-- [Limitations](#-limitations)12. [Future Work](#future-work)[![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)](https://pytorch.org/)The project addresses the growing challenge of synthetic media misuse, especially in social media, journalism, and digital evidence verification.
-
-- [Roadmap](#-roadmap)
-
-- [License](#-license)13. [Conclusion](#conclusion)
-
-- [Citation](#-citation)
-
-14. [References](#references)TruePix is an advanced AI image detection system that distinguishes AI-generated images from real photographs using a novel hybrid multi-branch architecture. Unlike traditional single-model approaches, TruePix combines four complementary detection methods—CNN spatial analysis, FFT frequency analysis, noise pattern consistency, and edge structure verification—to achieve robust classification with comprehensive explainability.
-
----
 
 
 
