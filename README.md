@@ -1,4 +1,4 @@
-# TruePix# TruePix - AI Image Detection System# TruePix - AI Image Detection System# TruePix - AI Image Detection System# TruePix - AI Image Detection SystemTruePix – Robust AI vs Real Image Detection System
+TruePix – Robust AI vs Real Image Detection System
 
 
 
