@@ -60,7 +60,9 @@ A production-ready deep learning system that detects AI-generated images with 89
 - Digital forensics and fraud investigation
 3. [Key Features](#key-features)
 - Deepfake detection and media authentication
-- Academic research on AI-generated content4. [System Architecture](#system-architecture)[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)TruePix is a system designed to distinguish AI-generated images from real photographs using image forensic cues and deep learning.
+- Academic research on AI-generated content
+4. [System Architecture]
+- (#system-architecture)[![FastAPI](https://img.shields.io/badge/FastAPI-0.108-green.svg)](https://fastapi.tiangolo.com/)[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)TruePix is a system designed to distinguish AI-generated images from real photographs using image forensic cues and deep learning.
 
 
 ## Architecture
