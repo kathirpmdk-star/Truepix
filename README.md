@@ -1,4 +1,4 @@
-TruePix – Robust AI vs Real Image Detection System
+## TruePix – Robust AI vs Real Image Detection System
 
 
 
@@ -26,7 +26,7 @@ A production-ready deep learning system that detects AI-generated images with 89
 
 
 
-## 🎯 OverviewA sophisticated deep learning system that detects AI-generated images and provides explainable results using a multi-branch hybrid architecture.
+## OverviewA sophisticated deep learning system that detects AI-generated images and provides explainable results using a multi-branch hybrid architecture.
 
 
 
@@ -108,7 +108,7 @@ TruePix is an advanced AI image detection system designed to distinguish between
 
 
 
-## 🏗 Architecture
+## Architecture
 
 ---**A multi-branch deep learning system that detects AI-generated images and explains why.**
 
@@ -228,13 +228,13 @@ Traditional visual inspection and single-method detection systems are no longer 
 
 ## 3. Key Features
 
-## 🚀 Installation
+##  Installation
 
 
 
 ### Prerequisites
 
-✅ **Multi-Branch Detection** - Uses 4 different algorithms working together for robust accuracy
+**Multi-Branch Detection** - Uses 4 different algorithms working together for robust accuracy
 
 Ensure you have the following installed:
 
@@ -242,7 +242,7 @@ Ensure you have the following installed:
 
 | Requirement | Version | Download |
 
-|-------------|---------|----------|✅ **Explainable AI** - Provides detailed reasoning for every classification decision
+|-------------|---------|----------| **Explainable AI** - Provides detailed reasoning for every classification decision
 
 | Python | 3.9+ | [python.org](https://www.python.org/downloads/) |
 
@@ -250,7 +250,7 @@ Ensure you have the following installed:
 
 | Git | Latest | [git-scm.com](https://git-scm.com/) |
 
-✅ **Visual Explanations** - Grad-CAM heatmaps highlight suspicious regions in images
+**Visual Explanations** - Grad-CAM heatmaps highlight suspicious regions in images
 
 ### System Requirements
 
@@ -258,7 +258,7 @@ Ensure you have the following installed:
 
 - **OS**: Windows 10+, macOS 10.15+, Ubuntu 20.04+
 
-- **RAM**: 4GB minimum (8GB recommended)✅ **Platform Robustness Testing** - Tests stability across social media compression (WhatsApp, Instagram, Facebook)
+- **RAM**: 4GB minimum (8GB recommended)  **Platform Robustness Testing** - Tests stability across social media compression (WhatsApp, Instagram, Facebook)
 
 - **Storage**: 2GB free space
 
@@ -266,27 +266,27 @@ Ensure you have the following installed:
 
 
 
-### Clone Repository✅ **Real-Time Analysis** - Fast inference with an intuitive web interface
+### Clone Repository **Real-Time Analysis** - Fast inference with an intuitive web interface
 
 
 
-```bash✅ **Multi-Branch Detection** - Combines 4 algorithms for robust accuracy across different AI generators  ---
+```bash **Multi-Branch Detection** - Combines 4 algorithms for robust accuracy across different AI generators  ---
 
 git clone https://github.com/kathirpmdk-star/Truepix.git
 
-cd Truepix✅ **High Accuracy** - Achieves 89.3% accuracy with 91.2% precision on AI detection
+cd Truepix **High Accuracy** - Achieves 89.3% accuracy with 91.2% precision on AI detection
 
 ```
 
-✅ **Explainable AI** - Provides detailed reasoning for every classification decision  
+ **Explainable AI** - Provides detailed reasoning for every classification decision  
 
 ---
 
 ---
 
-## ⚡ Quick Start
+##  Quick Start
 
-✅ **Grad-CAM Visualization** - Highlights suspicious image regions with visual heatmaps  ---Recent advances in generative AI models (GANs, Diffusion models) have made synthetic images visually indistinguishable from real ones. This creates serious risks such as:
+ **Grad-CAM Visualization** - Highlights suspicious image regions with visual heatmaps  ---Recent advances in generative AI models (GANs, Diffusion models) have made synthetic images visually indistinguishable from real ones. This creates serious risks such as:
 
 ### Backend Setup
 
@@ -294,7 +294,7 @@ cd Truepix✅ **High Accuracy** - Achieves 89.3% accuracy with 91.2% precision o
 
 ```bash
 
-# Navigate to backend directory✅ **Platform Robustness** - Tests stability across social media compression scenarios  
+# Navigate to backend directory **Platform Robustness** - Tests stability across social media compression scenarios  
 
 cd backend
 
@@ -302,7 +302,7 @@ TruePix uses a **multi-branch hybrid architecture** where each branch specialize
 
 # Create virtual environment
 
-python3 -m venv venv✅ **Real-Time Analysis** - Fast inference with intuitive web interface  ## Key Features
+python3 -m venv venv **Real-Time Analysis** - Fast inference with intuitive web interface  ## Key Features
 
 
 
@@ -310,7 +310,7 @@ python3 -m venv venv✅ **Real-Time Analysis** - Fast inference with intuitive w
 
 # On macOS/Linux:
 
-source venv/bin/activate                         Input Image✅ **High Accuracy** - 89.3% accuracy with 91.2% precision on AI detection
+source venv/bin/activate                         Input Image **High Accuracy** - 89.3% accuracy with 91.2% precision on AI detection
 
 # On Windows:
 
@@ -332,9 +332,9 @@ python main.py         ┌───────▼──┐    ┌────�
 
          │ CNN      │    │ FFT    │    │ Noise  │    │ Edge    │
 
-✅ Backend runs at **http://localhost:8000**  
+ Backend runs at **http://localhost:8000**  
 
-📖 API docs available at **http://localhost:8000/docs**         │ Branch   │    │ Branch │    │ Branch │    │ Branch  │✅ **Multi-Branch Detection** - Combines 4 algorithms for robust accuracy  
+📖 API docs available at **http://localhost:8000/docs**         │ Branch   │    │ Branch │    │ Branch │    │ Branch  │**Multi-Branch Detection** - Combines 4 algorithms for robust accuracy  
 
 
 
@@ -2284,7 +2284,7 @@ For questions, collaborations, or bug reports, please open a GitHub issue
 
 ---## Future Work
 
-⭐ **Star this repository if you find it useful!** ⭐
+ **Star this repository if you find it useful!** 
 
 
 
